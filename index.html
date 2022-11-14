@@ -1,0 +1,5056 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+	<meta name="generator" content="Hugo 0.60.1" />
+    <meta charset="utf-8">
+    
+    
+    <title>しばイヌとお茶</title>
+    <meta name="author" content="pipopa">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link href="https://hikotq.github.io/atom.xml" rel="alternate" title="しばイヌとお茶" type="application/atom+xml">
+    <link href="https://hikotq.github.io/images/Shiba.ico" rel="icon" type="image/vnd.microsoft.icon">
+    <style>
+@charset "UTF-8";
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("https://hikotq.github.io/font/fontawesome-webfont.eot");
+  src: url("https://hikotq.github.io/font/fontawesome-webfont.eot?#iefix") format("embedded-opentype"),
+  url("https://hikotq.github.io/font/fontawesome-webfont.woff") format("woff"),
+  url("https://hikotq.github.io/font/fontawesome-webfont.ttf") format("truetype"),
+  url("https://hikotq.github.io/font/fontawesome-webfont.svgz#FontAwesomeRegular") format("svg"),
+  url("https://hikotq.github.io/font/fontawesome-webfont.svg#FontAwesomeRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Letrogo';
+  src: url("https://hikotq.github.io/font/letrogo.ttf");
+  font-weight: normal;
+  font-style: normal; }
+  
+@font-face{
+    font-family: 'MyHermit';
+    src: url('https://hikotq.github.io/font/hermit-medium-webfont.eot');
+    src: url('https://hikotq.github.io/font/hermit-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('https://hikotq.github.io/font/hermit-medium-webfont.woff') format('woff'),
+         url('https://hikotq.github.io/font/hermit-medium-webfont.ttf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'Sawarabi Mincho', serif;
+  font-weight: 300;
+  font-size: 16px;
+  /*background: url("https://hikotq.github.io/images/retina_dust.png");*/
+  color: #444;
+  colori: #666666; }
+  @media screen and (max-width: 1040px) {
+    body {
+      margin: 0 20px; } }
+  @media screen and (max-width: 600px) {
+    body {
+      font-size: 14px; } }
+
+.bBackground {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: -moz-radial-gradient(50% 50%, farthest-side, white, #efefef);
+  background: -webkit-gradient(radial, 50% 50%, 250, 50% 50%, 750, from(white), to(#bbbbbb));
+  z-index: -100; }
+
+h1 {
+  font-size: 1.8em; }
+
+h2 {
+  font-family: 'Sawarabi Gothic', 'Fjalla One', sans-serif;
+  font-size: 1.5em; }
+
+h3 {
+  font-size: 1.3em; }
+
+a {
+  text-decoration: none;
+  outline-width: 0;
+  color: #258fb8; }
+
+.alignleft {
+  float: left; }
+
+.alignright {
+  float: right; }
+
+.clearfix {
+  *zoom: 1; }
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+.inner {
+  width: 800px;
+  margin: 0 auto; }
+  @media screen and (max-width: 1040px) {
+    .inner {
+      width: 100%; } }
+
+#w2btoTop {
+  display: none;
+  text-decoration: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  overflow: hidden;
+  width: 51px;
+  height: 51px;
+  border: none;
+  text-indent: -999px;
+  background: url(https://hikotq.github.io/images/totop.png) no-repeat left top; }
+
+#w2btoTopHover {
+  background: url(https://hikotq.github.io/images/totop.png) no-repeat left -51px;
+  width: 51px;
+  height: 51px;
+  display: block;
+  overflow: hidden;
+  float: left;
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: alpha(opacity=0); }
+
+#w2btoTop:active, #w2btoTop:focus {
+  outline: none; }
+
+.basic-alignment.left, article .entry-content img.left, article .entry-content video.left {
+  float: left;
+  margin-right: 1.5em; }
+.basic-alignment.right, article .entry-content img.right, article .entry-content video.right {
+  float: right;
+  margin-left: 1.5em; }
+.basic-alignment.center, article .entry-content img.center, article .entry-content video.center {
+  display: block;
+  margin: 0 auto 1.5em; }
+.basic-alignment.left, article .entry-content img.left, article .entry-content video.left, .basic-alignment.right, article .entry-content img.right, article .entry-content video.right {
+  margin-bottom: .8em; }
+
+/* changes tooltip, to use, make elements 'class' as 'tooltip' and 'title' would be shown in tooltip */
+.tooltip {
+  display: inline;
+  position: relative; }
+
+.tooltip:hover {
+  text-decoration: none; }
+
+.tooltip:hover:after {
+  background: #111;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+  bottom: 18px;
+  color: #fff;
+  content: attr(title);
+  display: block;
+  left: 50%;
+  padding: 5px 15px;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 98; }
+
+.tooltip:hover:before {
+  border: solid;
+  border-color: #111 transparent;
+  border-width: 6px 6px 0 6px;
+  bottom: 12px;
+  content: "";
+  display: block;
+  left: 75%;
+  position: absolute;
+  z-index: 99; }
+
+.pullquote-right:before,
+.pullquote-left:before {
+  /* Reset metrics. */
+  padding: 0;
+  border: none;
+  /* Content */
+  content: attr(data-pullquote);
+  /* Pull out to the right, modular scale based margins. */
+  float: right;
+  width: 45%;
+  margin: .5em 0 1em 1.5em;
+  /* Baseline correction */
+  position: relative;
+  top: 7px;
+  font-size: 1.4em;
+  line-height: 1.45em; }
+
+.pullquote-left:before {
+  /* Make left pullquotes align properly. */
+  float: left;
+  margin: .5em 1.5em 1em 0; }
+
+#header {
+  padding: 20px 0 20px 0; }
+  @media screen and (max-width: 1040px) {
+    #header {
+      height: auto;
+      position: relative;
+      padding-bottom: 10px; } }
+  #header a {
+    color: #666666;
+    -webkit-transition: compact(compact(color 0.3s, false, false, false, false, false, false, false, false, false) false false);
+    -moz-transition: compact(compact(color 0.3s, false, false, false, false, false, false, false, false, false) false false false);
+    -o-transition: compact(compact(color 0.3s, false, false, false, false, false, false, false, false, false) false false false);
+    transition: compact(color 0.3s, false, false, false, false, false, false, false, false, false); }
+    #header a:hover {
+      color: #258fb8; }
+  #header h1 {
+    font-family: Letrogo, Slakey;
+    font-weight: 300;
+    font-size: 3em; }
+    @media screen and (max-width: 1040px) {
+      #header h1 {
+        float: none; 
+        font-size: 2em;
+    } }
+
+#headerbg {
+  text-align: center;
+  background: #444;
+  padding: 10px 10px;
+  display: table;
+  color: #fff;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-weight: normal;
+  -webkit-mask-image: -webkit-linear-gradient(black, rgba(0, 0, 0, 0.9));
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: .2s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: .2s;
+  -moz-animation-timing-function: ease;
+  -moz-animation-fill-mode: both;
+  -ms-animation-duration: 1s;
+  -ms-animation-delay: .2s;
+  -ms-animation-timing-function: ease;
+  -ms-animation-fill-mode: both;
+  -o-animation-duration: 1s;
+  -o-animation-delay: .2s;
+  -o-animation-timing-function: ease;
+  -o-animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: .2s;
+  animation-timing-function: ease;
+  animation-fill-mode: both; }
+
+#load {
+  display: none;
+  position: absolute;
+  right: 50%;
+  top: 50%;
+  background: url("https://hikotq.github.io/images/loading.gif");
+  width: 50px;
+  height: 50px;
+  text-indent: -9999em; }
+
+#social-links li {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 35px;
+  margin-top: 20px;
+  margin-right: 9px;
+  background-color: #ddd;
+  text-align: center;
+  line-height: 35px;
+  -webkit-transition: compact(compact(background-color 1s ease-in-out, false, false, false, false, false, false, false, false, false) false false);
+  -moz-transition: compact(compact(background-color 1s ease-in-out, false, false, false, false, false, false, false, false, false) false false false);
+  -o-transition: compact(compact(background-color 1s ease-in-out, false, false, false, false, false, false, false, false, false) false false false);
+  transition: compact(background-color 1s ease-in-out, false, false, false, false, false, false, false, false, false); }
+  #social-links li:hover {
+    background-color: #555; }
+#social-links a {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  #social-links a svg {
+    position: absolute; }
+  #social-links a .github {
+    top: 3px;
+    left: 2px; }
+  #social-links a .sina-weibo {
+    top: 8px;
+    left: 6px; }
+  #social-links a .tencent-weibo {
+    top: 6px;
+    left: 4px; }
+  #social-links a .twitter {
+    top: 2px;
+    left: 3px; }
+
+a.facebook {
+  background: url("https://hikotq.github.io/images/social/Facebook.png") center no-repeat; }
+
+a.facebook:hover {
+  background: url("https://hikotq.github.io/images/social/FacebookH.png") center no-repeat; }
+
+a.github {
+  background: url("https://hikotq.github.io/images/social/Github.png") center no-repeat; }
+
+a.github:hover {
+  background: url("https://hikotq.github.io/images/social/GithubH.png") center no-repeat; }
+
+a.twitter {
+  background: url("https://hikotq.github.io/images/social/Twitter.png") center no-repeat; }
+
+a.twitter:hover {
+  background: url("https://hikotq.github.io/images/social/TwitterH.png") center no-repeat; }
+
+a.google {
+  background: url("https://hikotq.github.io/images/social/Picasa.png") center no-repeat; }
+
+a.google:hover {
+  background: url("https://hikotq.github.io/images/social/PicasaH.png") center no-repeat; }
+
+a.skype {
+  background: url("https://hikotq.github.io/images/social/Skype.png") center no-repeat; }
+
+a.skype:hover {
+  background: url("https://hikotq.github.io/images/social/SkypeH.png") center no-repeat; }
+
+a.linkedin {
+  background: url("https://hikotq.github.io/images/social/LinkedIn.png") center no-repeat; }
+
+a.linkedin:hover {
+  background: url("https://hikotq.github.io/images/social/LinkedInH.png") center no-repeat; }
+
+a.youtube {
+  background: url("https://hikotq.github.io/images/social/Youtube.png") center no-repeat; }
+
+a.youtube:hover {
+  background: url("https://hikotq.github.io/images/social/YoutubeH.png") center no-repeat; }
+
+a.lastfm {
+  background: url("https://hikotq.github.io/images/social/LastFM.png") center no-repeat; }
+
+a.lastfm:hover {
+  background: url("https://hikotq.github.io/images/social/LastFMH.png") center no-repeat; }
+
+/* search bar */
+#search {
+  display: inline; }
+
+#search input[type="text"] {
+  background: url("https://hikotq.github.io/images/search-dark.png") no-repeat 10px 6px #444444;
+  border: 0 none;
+  font: bold 12px Arial,Helvetica,Sans-serif;
+  color: #777;
+  width: 110px;
+  padding: 6px 15px 6px 35px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -webkit-transition: all 0.7s ease 0s;
+  -moz-transition: all 0.7s ease 0s;
+  -o-transition: all 0.7s ease 0s;
+  transition: all 0.7s ease 0s; }
+
+#search input[type="text"]:focus {
+  width: 160px; }
+
+#dark {
+  display: inline-block;
+  height: 70px; }
+
+#dark #search input[type="text"] {
+  background: url("https://hikotq.github.io/images/search-dark.png") no-repeat 10px 6px #444444;
+  border: 0 none;
+  font: bold 12px Arial,Helvetica,Sans-serif;
+  color: #ddd;
+  width: 110px;
+  padding: 6px 15px 6px 35px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 3px rgba(0, 0, 0, 0.2) inset;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s; }
+
+#dark #search input[type="text"]:focus {
+  width: 160px;
+  outline: 0; }
+
+/* nav */
+#nav {
+  text-align: center;
+  position: relative;
+  margin: 10px auto; }
+
+ul#nav li {
+  display: inline-block; }
+
+ul#nav li {
+  list-style-type: none;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-right: 1px; }
+
+ul#nav li a {
+  display: inline-block;
+  width: 110px;
+  height: 40px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #222;
+  font-weight: normal;
+  text-decoration: none;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-style: normal;
+  /*text-shadow: 1px 1px 10px #222;*/
+  overflow: hidden; }
+    @media screen and (max-width: 520px) {
+      ul#nav li a {
+        width: 100px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        } }
+
+ul#nav li a:hover {
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  background-image: url("https://hikotq.github.io/images/hover.png");
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+ul#nav li a:active {
+  position: relative;
+  top: 2px; }
+
+ul#nav li#active a {
+  color: #FFF;
+  background-image: url("https://hikotq.github.io/images/active.png");
+  background-repeat: no-repeat;
+  background-position: center top; }
+
+#pagenavi {
+  padding: 20px 0;
+  height: 20px;
+  line-height: 20px;
+  position: relative;
+  border-top: 1px solid white;
+  border-bottom: 1px solid #dddddd; }
+  #pagenavi a:hover {
+    text-decoration: underline; }
+  #pagenavi .prev, #pagenavi .next {
+    position: absolute; }
+  #pagenavi .prev {
+    padding-left: 30px;
+    left: 0; }
+    #pagenavi .prev:before {
+      content: "\f060";
+      font: 1.3em FontAwesome;
+      position: absolute;
+      left: 0; }
+  #pagenavi .next {
+    padding-right: 30px;
+    right: 0; }
+    #pagenavi .next:before {
+      content: "\f061";
+      font: 1.3em FontAwesome;
+      position: absolute;
+      right: 0; }
+  #pagenavi .center {
+    text-align: center;
+    width: 100%;
+    display: block; }
+    @media screen and (max-width: 400px) {
+      #pagenavi .center {
+        display: none; } }
+
+article {
+  border-bottom: 1px solid #dddddd;
+  padding: 30px 0;
+  position: relative; }
+  @media screen and (max-width: 800px) {
+    article {
+      padding-bottom: 15px; } }
+  @media screen and (max-width: 600px) {
+    article {
+      padding: 15px 0; } }
+  article h2.title {
+    font-family: 'Sawarabi Gothic','Fjalla One', sans-serif ;
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 20px; }
+    article h2.title a {
+      color: #1094e8; }
+  article .title a {
+    color: #7c7873;
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out; }
+  article .title a:hover {
+    color: #084B8A;
+    text-shadow: 3px 3px 12px #888;
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3); }
+  article .entry-content {
+    line-height: 2;
+    text-align: justify; }
+    article .entry-content a:hover {
+      text-decoration: underline; }
+    article .entry-content .more-link {
+      display: block;
+      margin-top: 16px;
+      padding-left: 30px;
+      position: relative; }
+      article .entry-content .more-link:before {
+        content: "\f061";
+        font: 1.3em FontAwesome;
+        line-height: 1.6em;
+        position: absolute;
+        left: 0; }
+    article .entry-content p, article .entry-content blockquote, article .entry-content ul, article .entry-content ol, article .entry-content dl, article .entry-content table, article .entry-content iframe, article .entry-content h1, article .entry-content h2, article .entry-content h3, article .entry-content h4, article .entry-content h5, article .entry-content h6, article .entry-content .video-container {
+      margin-top: 10px; }
+    article .entry-content ul, article .entry-content ol, article .entry-content dl {
+      margin-left: 20px; }
+      article .entry-content ul ul, article .entry-content ul ol, article .entry-content ul dl, article .entry-content ol ul, article .entry-content ol ol, article .entry-content ol dl, article .entry-content dl ul, article .entry-content dl ol, article .entry-content dl dl {
+        margin-top: 0; }
+    article .entry-content strong {
+      font-weight: bold; }
+    article .entry-content em {
+      font-style: italic; }
+    article .entry-content p {
+      margin-top: 10px; }
+    article .entry-content h2 {
+      font-weight: 300;
+      border-bottom: 1px solid #dddddd;
+      position: relative; }
+      article .entry-content h2:before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        border-bottom: 1px solid white;
+        width: 100%; }
+    article .entry-content img, article .entry-content video {
+      margin: 10px 0;
+      max-width: 100%;
+      height: auto;
+      -moz-border-radius: 0.3em;
+      -webkit-border-radius: 0.3em;
+      -o-border-radius: 0.3em;
+      -ms-border-radius: 0.3em;
+      -khtml-border-radius: 0.3em;
+      border-radius: 0.3em;
+      -moz-box-shadow: rgba(0, 0, 0, 0.75) 0 1px 4px;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.75) 0 1px 4px;
+      -o-box-shadow: rgba(0, 0, 0, 0.75) 0 1px 4px;
+      box-shadow: rgba(0, 0, 0, 0.75) 0 1px 4px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;
+      border: #fff 0.3em solid; }
+    article .entry-content img.noborder, article .entry-content video.noborder {
+      border: none;
+      box-shadow: none; }
+    article .entry-content blockquote {
+      background: #dddddd;
+      border-left: 5px solid #cccccc;
+      padding: 15px 20px;
+      margin-top: 10px; }
+      article .entry-content blockquote > p:first-of-type {
+        margin-top: 0; }
+    article .entry-content iframe {
+      border: none; }
+    article .entry-content table {
+      background: #dddddd;
+      border: 1px solid #cccccc;
+      border-spacing: 0;
+      margin-top: 10px; }
+      article .entry-content table th {
+        background: #cccccc;
+        padding: 0 15px; }
+      article .entry-content table td {
+        text-align: center; }
+      article .entry-content table tr:nth-of-type(2n) {
+        background: #d5d5d5; }
+    article .entry-content .caption {
+      display: block;
+      font-size: 0.9em;
+      color: #999999;
+      padding-left: 25px;
+      position: relative; }
+      article .entry-content .caption:before {
+        content: "\f040";
+        color: #cccccc;
+        font: 1.3em FontAwesome;
+        line-height: 1.6em;
+        position: absolute;
+        left: 0; }
+    article .entry-content .video-container {
+      position: relative;
+      padding-bottom: 56.25%;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden; }
+      article .entry-content .video-container iframe, article .entry-content .video-container object, article .entry-content .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin-top: 0; }
+
+.share {
+  padding: 15px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid #dddddd; }
+
+@media screen and (max-width: 800px) {
+  .post h2.title, .post .entry-content {
+    margin-left: 0; } }
+.post .meta {
+  line-height: 2;
+  color: #999999;
+  width: 370px; }
+  @media screen and (max-width: 800px) {
+    .post .meta {
+      margin-top: 15px;
+      position: static;
+      width: auto; } }
+  .post .meta a {
+    color: #999999;
+    -webkit-transition: compact(compact(0.3s, false, false, false, false, false, false, false, false, false) false false);
+    -moz-transition: compact(compact(0.3s, false, false, false, false, false, false, false, false, false) false false false);
+    -o-transition: compact(compact(0.3s, false, false, false, false, false, false, false, false, false) false false false);
+    transition: compact(0.3s, false, false, false, false, false, false, false, false, false); }
+    .post .meta a:hover {
+      color: #666666; }
+  .post .meta .date, .post .meta .tags, .post .meta .comments {
+    padding-left: 30px;
+    position: relative; }
+    .post .meta .date:before, .post .meta .tags:before, .post .meta .comments:before {
+      color: #cccccc;
+      font: 1.3em FontAwesome;
+      line-height: 1.6em;
+      position: absolute;
+      left: 0; }
+    @media screen and (max-width: 800px) {
+      .post .meta .date, .post .meta .tags, .post .meta .comments {
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: middle;
+        *vertical-align: auto;
+        zoom: 1;
+        *display: inline;
+        margin-right: 30px; } }
+  .post .meta .date:before {
+    content: "\f073"; }
+  .post .meta .tags:before {
+    content: "\f02c"; }
+  .post .meta .comments:before {
+    content: "\f075"; }
+
+.archives {
+  position: relative; }
+  .archives:last-of-type:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 200px;
+    border-top: 1px solid #dddddd; }
+  .archives .top-border-padding {
+    border-top: 1px solid #fff; }
+    .archives .top-border-padding:before {
+      content: "";
+      position: absolute;
+      top: -1px;
+      width: 100%;
+      border-top: 1px solid #dddddd; }
+  .archives .year {
+    line-height: 35px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    padding-top: 15px;
+    border-top: 1px solid #fff; }
+    .archives .year:before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      width: 100%;
+      border-top: 1px solid #dddddd; }
+    @media screen and (max-width: 600px) {
+      .archives .year {
+        position: relative;
+        width: 100%; } }
+  .archives article {
+    margin-left: 200px;
+    padding: 10px 0; }
+    @media screen and (max-width: 600px) {
+      .archives article {
+        margin-left: 0; }
+        .archives article:first-of-type {
+          border-top: none;
+          padding-top: 30px; } }
+    .archives article .title {
+      margin-bottom: 0;
+      font-size: 25px; }
+    .archives article .meta {
+      color: #999999;
+      font-size: 0.9em;
+      line-height: 2;
+      margin-top: 10px; }
+      @media screen and (max-width: 600px) {
+        .archives article .meta {
+          display: none; } }
+      .archives article .meta span {
+        margin-right: 30px;
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: middle;
+        *vertical-align: auto;
+        zoom: 1;
+        *display: inline; }
+        .archives article .meta span:before {
+          color: #cccccc;
+          font: 1.3em FontAwesome;
+          padding-right: 10px; }
+      .archives article .meta a {
+        color: #999999;
+        -webkit-transition: compact(compact(0.3s, false, false, false, false, false, false, false, false, false) false false);
+        -moz-transition: compact(compact(0.3s, false, false, false, false, false, false, false, false, false) false false false);
+        -o-transition: compact(compact(0.3s, false, false, false, false, false, false, false, false, false) false false false);
+        transition: compact(0.3s, false, false, false, false, false, false, false, false, false); }
+        .archives article .meta a:hover {
+          color: #666666; }
+      .archives article .meta .date:before {
+        content: "\f073"; }
+      .archives article .meta .tags:before {
+        content: "\f02c"; }
+      .archives article .meta .comments:before {
+        content: "\f075"; }
+
+#comment {
+  padding: 30px 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid #dddddd; }
+  #comment h2.title {
+    font-size: 25px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 20px; }
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.6em;
+  color: #666; }
+
+footer a {
+  color: #123; }
+
+footer a:hover {
+  color: #456; }
+
+#banner {
+  color: #999999;
+  padding: 30px 0;
+  line-height: 30px;
+  text-align: center;
+  position: relative;
+  display: none;
+  border-top: 1px solid white;
+  border-bottom: 1px solid #dddddd; }
+  #banner:hover a {
+    color: #258fb8; }
+  #banner a {
+    color: #999999;
+    -webkit-transition: compact(compact(0.3s, false, false, false, false, false, false, false, false, false) false false);
+    -moz-transition: compact(compact(0.3s, false, false, false, false, false, false, false, false, false) false false false);
+    -o-transition: compact(compact(0.3s, false, false, false, false, false, false, false, false, false) false false false);
+    transition: compact(0.3s, false, false, false, false, false, false, false, false, false); }
+    #banner a:hover {
+      text-decoration: underline; }
+  #banner small {
+    position: absolute;
+    right: 0;
+    bottom: 0; }
+  #banner .loading {
+    background: image-url("loading_pacman.gif") center no-repeat;
+    text-indent: -9999px; }
+  #banner .container {
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+    display: none; }
+    #banner .container .feed {
+      list-style: none;
+      position: absolute;
+      top: 0;
+      width: 100%; }
+      #banner .container .feed li {
+        position: relative; }
+        #banner .container .feed li small {
+          position: absolute;
+          right: 0; }
+
+/*! fancyBox v2.0.6 fancyapps.com | fancyapps.com/fancybox/#license */
+.fancybox-tmp iframe, .fancybox-tmp object {
+  vertical-align: top;
+  padding: 0;
+  margin: 0; }
+
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8020; }
+
+.fancybox-skin {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  background: #f9f9f9;
+  color: #444;
+  text-shadow: none;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px; }
+
+.fancybox-opened {
+  z-index: 8030; }
+
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: compact(0 10px 25px rgba(0, 0, 0, 0.5), false, false, false, false, false, false, false, false, false);
+  -moz-box-shadow: compact(0 10px 25px rgba(0, 0, 0, 0.5), false, false, false, false, false, false, false, false, false);
+  box-shadow: compact(0 10px 25px rgba(0, 0, 0, 0.5), false, false, false, false, false, false, false, false, false); }
+
+.fancybox-outer, .fancybox-inner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  outline: none; }
+
+.fancybox-inner {
+  overflow: hidden; }
+
+.fancybox-type-iframe .fancybox-inner {
+  -webkit-overflow-scrolling: touch; }
+
+.fancybox-error {
+  color: #444;
+  font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 10px; }
+
+.fancybox-image, .fancybox-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  vertical-align: top; }
+
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%; }
+
+#fancybox-loading, .fancybox-close, .fancybox-prev span, .fancybox-next span {
+  background-image: image-url("fancybox/fancybox_sprite.png"); }
+
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background-position: 0 -108px;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 8020; }
+
+#fancybox-loading div {
+  width: 44px;
+  height: 44px;
+  background: image-url("fancybox/fancybox_loading.gif") center center no-repeat; }
+
+.fancybox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040; }
+
+.fancybox-nav {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+  background: transparent image-url("fancybox/blank.gif");
+  /* helps IE */
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  z-index: 8040; }
+
+.fancybox-prev {
+  left: 0; }
+
+.fancybox-next {
+  right: 0; }
+
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 34px;
+  margin-top: -18px;
+  cursor: pointer;
+  z-index: 8040;
+  visibility: hidden; }
+
+.fancybox-prev span {
+  left: 20px;
+  background-position: 0 -36px; }
+
+.fancybox-next span {
+  right: 20px;
+  background-position: 0 -72px; }
+
+.fancybox-nav:hover span {
+  visibility: visible; }
+
+.fancybox-tmp {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  padding: 0;
+  overflow: visible;
+  visibility: hidden; }
+
+/* Overlay helper */
+#fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: #000; }
+
+#fancybox-overlay.overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0; }
+
+/* Title helper */
+.fancybox-title {
+  visibility: hidden;
+  font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050; }
+
+.fancybox-opened .fancybox-title {
+  visibility: visible; }
+
+.fancybox-title-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-bottom: -35px;
+  z-index: 8030;
+  text-align: center; }
+
+.fancybox-title-float-wrap .child {
+  display: inline-block;
+  margin-right: -100%;
+  padding: 2px 20px;
+  background: transparent;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgba(0, 0, 0, 0.8);
+  text-shadow: 0 1px 2px #222;
+  color: #FFF;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px; }
+
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #fff; }
+
+.fancybox-title-inside-wrap {
+  margin-top: 10px; }
+
+.fancybox-title-over-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8); }
+
+/*
+Animate.css - http://daneden.me/animate
+Licensed under the ☺ license (http://licence.visualidiot.com/)
+
+Copyright (c) 2012 Dan Eden
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+*/
+body {
+  /* Addresses a small issue in webkit: http://bit.ly/NEdoDq */
+  -webkit-backface-visibility: hidden; }
+
+.animated {
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.animated.hinge {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s; }
+
+@-webkit-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+@-moz-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+@-o-keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+@keyframes flash {
+  0%, 50%, 100% {
+    opacity: 1; }
+
+  25%, 75% {
+    opacity: 0; } }
+
+.flash {
+  -webkit-animation-name: flash;
+  -moz-animation-name: flash;
+  -o-animation-name: flash;
+  animation-name: flash; }
+
+@-webkit-keyframes shake {
+  0%, 100% {
+    -webkit-transform: translateX(0); }
+
+  10%, 30%, 50%, 70%, 90% {
+    -webkit-transform: translateX(-10px); }
+
+  20%, 40%, 60%, 80% {
+    -webkit-transform: translateX(10px); } }
+
+@-moz-keyframes shake {
+  0%, 100% {
+    -moz-transform: translateX(0); }
+
+  10%, 30%, 50%, 70%, 90% {
+    -moz-transform: translateX(-10px); }
+
+  20%, 40%, 60%, 80% {
+    -moz-transform: translateX(10px); } }
+
+@-o-keyframes shake {
+  0%, 100% {
+    -o-transform: translateX(0); }
+
+  10%, 30%, 50%, 70%, 90% {
+    -o-transform: translateX(-10px); }
+
+  20%, 40%, 60%, 80% {
+    -o-transform: translateX(10px); } }
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0); }
+
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px); }
+
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px); } }
+
+.shake {
+  -webkit-animation-name: shake;
+  -moz-animation-name: shake;
+  -o-animation-name: shake;
+  animation-name: shake; }
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0); }
+
+  40% {
+    -webkit-transform: translateY(-30px); }
+
+  60% {
+    -webkit-transform: translateY(-15px); } }
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0); }
+
+  40% {
+    -moz-transform: translateY(-30px); }
+
+  60% {
+    -moz-transform: translateY(-15px); } }
+
+@-o-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -o-transform: translateY(0); }
+
+  40% {
+    -o-transform: translateY(-30px); }
+
+  60% {
+    -o-transform: translateY(-15px); } }
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0); }
+
+  40% {
+    transform: translateY(-30px); }
+
+  60% {
+    transform: translateY(-15px); } }
+
+.bounce {
+  -webkit-animation-name: bounce;
+  -moz-animation-name: bounce;
+  -o-animation-name: bounce;
+  animation-name: bounce; }
+
+@-webkit-keyframes tada {
+  0% {
+    -webkit-transform: scale(1); }
+
+  10%, 20% {
+    -webkit-transform: scale(0.9) rotate(-3deg); }
+
+  30%, 50%, 70%, 90% {
+    -webkit-transform: scale(1.1) rotate(3deg); }
+
+  40%, 60%, 80% {
+    -webkit-transform: scale(1.1) rotate(-3deg); }
+
+  100% {
+    -webkit-transform: scale(1) rotate(0); } }
+
+@-moz-keyframes tada {
+  0% {
+    -moz-transform: scale(1); }
+
+  10%, 20% {
+    -moz-transform: scale(0.9) rotate(-3deg); }
+
+  30%, 50%, 70%, 90% {
+    -moz-transform: scale(1.1) rotate(3deg); }
+
+  40%, 60%, 80% {
+    -moz-transform: scale(1.1) rotate(-3deg); }
+
+  100% {
+    -moz-transform: scale(1) rotate(0); } }
+
+@-o-keyframes tada {
+  0% {
+    -o-transform: scale(1); }
+
+  10%, 20% {
+    -o-transform: scale(0.9) rotate(-3deg); }
+
+  30%, 50%, 70%, 90% {
+    -o-transform: scale(1.1) rotate(3deg); }
+
+  40%, 60%, 80% {
+    -o-transform: scale(1.1) rotate(-3deg); }
+
+  100% {
+    -o-transform: scale(1) rotate(0); } }
+
+@keyframes tada {
+  0% {
+    transform: scale(1); }
+
+  10%, 20% {
+    transform: scale(0.9) rotate(-3deg); }
+
+  30%, 50%, 70%, 90% {
+    transform: scale(1.1) rotate(3deg); }
+
+  40%, 60%, 80% {
+    transform: scale(1.1) rotate(-3deg); }
+
+  100% {
+    transform: scale(1) rotate(0); } }
+
+.tada {
+  -webkit-animation-name: tada;
+  -moz-animation-name: tada;
+  -o-animation-name: tada;
+  animation-name: tada; }
+
+@-webkit-keyframes swing {
+  20%, 40%, 60%, 80%, 100% {
+    -webkit-transform-origin: top center; }
+
+  20% {
+    -webkit-transform: rotate(15deg); }
+
+  40% {
+    -webkit-transform: rotate(-10deg); }
+
+  60% {
+    -webkit-transform: rotate(5deg); }
+
+  80% {
+    -webkit-transform: rotate(-5deg); }
+
+  100% {
+    -webkit-transform: rotate(0deg); } }
+
+@-moz-keyframes swing {
+  20% {
+    -moz-transform: rotate(15deg); }
+
+  40% {
+    -moz-transform: rotate(-10deg); }
+
+  60% {
+    -moz-transform: rotate(5deg); }
+
+  80% {
+    -moz-transform: rotate(-5deg); }
+
+  100% {
+    -moz-transform: rotate(0deg); } }
+
+@-o-keyframes swing {
+  20% {
+    -o-transform: rotate(15deg); }
+
+  40% {
+    -o-transform: rotate(-10deg); }
+
+  60% {
+    -o-transform: rotate(5deg); }
+
+  80% {
+    -o-transform: rotate(-5deg); }
+
+  100% {
+    -o-transform: rotate(0deg); } }
+
+@keyframes swing {
+  20% {
+    transform: rotate(15deg); }
+
+  40% {
+    transform: rotate(-10deg); }
+
+  60% {
+    transform: rotate(5deg); }
+
+  80% {
+    transform: rotate(-5deg); }
+
+  100% {
+    transform: rotate(0deg); } }
+
+.swing {
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -o-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-animation-name: swing;
+  -moz-animation-name: swing;
+  -o-animation-name: swing;
+  animation-name: swing; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@-webkit-keyframes wobble {
+  0% {
+    -webkit-transform: translateX(0%); }
+
+  15% {
+    -webkit-transform: translateX(-25%) rotate(-5deg); }
+
+  30% {
+    -webkit-transform: translateX(20%) rotate(3deg); }
+
+  45% {
+    -webkit-transform: translateX(-15%) rotate(-3deg); }
+
+  60% {
+    -webkit-transform: translateX(10%) rotate(2deg); }
+
+  75% {
+    -webkit-transform: translateX(-5%) rotate(-1deg); }
+
+  100% {
+    -webkit-transform: translateX(0%); } }
+
+@-moz-keyframes wobble {
+  0% {
+    -moz-transform: translateX(0%); }
+
+  15% {
+    -moz-transform: translateX(-25%) rotate(-5deg); }
+
+  30% {
+    -moz-transform: translateX(20%) rotate(3deg); }
+
+  45% {
+    -moz-transform: translateX(-15%) rotate(-3deg); }
+
+  60% {
+    -moz-transform: translateX(10%) rotate(2deg); }
+
+  75% {
+    -moz-transform: translateX(-5%) rotate(-1deg); }
+
+  100% {
+    -moz-transform: translateX(0%); } }
+
+@-o-keyframes wobble {
+  0% {
+    -o-transform: translateX(0%); }
+
+  15% {
+    -o-transform: translateX(-25%) rotate(-5deg); }
+
+  30% {
+    -o-transform: translateX(20%) rotate(3deg); }
+
+  45% {
+    -o-transform: translateX(-15%) rotate(-3deg); }
+
+  60% {
+    -o-transform: translateX(10%) rotate(2deg); }
+
+  75% {
+    -o-transform: translateX(-5%) rotate(-1deg); }
+
+  100% {
+    -o-transform: translateX(0%); } }
+
+@keyframes wobble {
+  0% {
+    transform: translateX(0%); }
+
+  15% {
+    transform: translateX(-25%) rotate(-5deg); }
+
+  30% {
+    transform: translateX(20%) rotate(3deg); }
+
+  45% {
+    transform: translateX(-15%) rotate(-3deg); }
+
+  60% {
+    transform: translateX(10%) rotate(2deg); }
+
+  75% {
+    transform: translateX(-5%) rotate(-1deg); }
+
+  100% {
+    transform: translateX(0%); } }
+
+.wobble {
+  -webkit-animation-name: wobble;
+  -moz-animation-name: wobble;
+  -o-animation-name: wobble;
+  animation-name: wobble; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1); }
+
+  50% {
+    -webkit-transform: scale(1.1); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes pulse {
+  0% {
+    -moz-transform: scale(1); }
+
+  50% {
+    -moz-transform: scale(1.1); }
+
+  100% {
+    -moz-transform: scale(1); } }
+
+@-o-keyframes pulse {
+  0% {
+    -o-transform: scale(1); }
+
+  50% {
+    -o-transform: scale(1.1); }
+
+  100% {
+    -o-transform: scale(1); } }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1); }
+
+  50% {
+    transform: scale(1.1); }
+
+  100% {
+    transform: scale(1); } }
+
+.pulse {
+  -webkit-animation-name: pulse;
+  -moz-animation-name: pulse;
+  -o-animation-name: pulse;
+  animation-name: pulse; }
+
+@-webkit-keyframes flip {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(0);
+    -webkit-animation-timing-function: ease-out; }
+
+  40% {
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -webkit-animation-timing-function: ease-out; }
+
+  50% {
+    -webkit-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -webkit-animation-timing-function: ease-in; }
+
+  80% {
+    -webkit-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -webkit-animation-timing-function: ease-in; }
+
+  100% {
+    -webkit-transform: perspective(400px) scale(1);
+    -webkit-animation-timing-function: ease-in; } }
+
+@-moz-keyframes flip {
+  0% {
+    -moz-transform: perspective(400px) rotateY(0);
+    -moz-animation-timing-function: ease-out; }
+
+  40% {
+    -moz-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -moz-animation-timing-function: ease-out; }
+
+  50% {
+    -moz-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -moz-animation-timing-function: ease-in; }
+
+  80% {
+    -moz-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -moz-animation-timing-function: ease-in; }
+
+  100% {
+    -moz-transform: perspective(400px) scale(1);
+    -moz-animation-timing-function: ease-in; } }
+
+@-o-keyframes flip {
+  0% {
+    -o-transform: perspective(400px) rotateY(0);
+    -o-animation-timing-function: ease-out; }
+
+  40% {
+    -o-transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    -o-animation-timing-function: ease-out; }
+
+  50% {
+    -o-transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    -o-animation-timing-function: ease-in; }
+
+  80% {
+    -o-transform: perspective(400px) rotateY(360deg) scale(0.95);
+    -o-animation-timing-function: ease-in; }
+
+  100% {
+    -o-transform: perspective(400px) scale(1);
+    -o-animation-timing-function: ease-in; } }
+
+@keyframes flip {
+  0% {
+    transform: perspective(400px) rotateY(0);
+    animation-timing-function: ease-out; }
+
+  40% {
+    transform: perspective(400px) translateZ(150px) rotateY(170deg);
+    animation-timing-function: ease-out; }
+
+  50% {
+    transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+    animation-timing-function: ease-in; }
+
+  80% {
+    transform: perspective(400px) rotateY(360deg) scale(0.95);
+    animation-timing-function: ease-in; }
+
+  100% {
+    transform: perspective(400px) scale(1);
+    animation-timing-function: ease-in; } }
+
+.flip {
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: flip;
+  -moz-backface-visibility: visible !important;
+  -moz-animation-name: flip;
+  -o-backface-visibility: visible !important;
+  -o-animation-name: flip;
+  backface-visibility: visible !important;
+  animation-name: flip; }
+
+@-webkit-keyframes flipInX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    opacity: 0; }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateX(-10deg); }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateX(10deg); }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    opacity: 1; } }
+
+@-moz-keyframes flipInX {
+  0% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    opacity: 0; }
+
+  40% {
+    -moz-transform: perspective(400px) rotateX(-10deg); }
+
+  70% {
+    -moz-transform: perspective(400px) rotateX(10deg); }
+
+  100% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    opacity: 1; } }
+
+@-o-keyframes flipInX {
+  0% {
+    -o-transform: perspective(400px) rotateX(90deg);
+    opacity: 0; }
+
+  40% {
+    -o-transform: perspective(400px) rotateX(-10deg); }
+
+  70% {
+    -o-transform: perspective(400px) rotateX(10deg); }
+
+  100% {
+    -o-transform: perspective(400px) rotateX(0deg);
+    opacity: 1; } }
+
+@keyframes flipInX {
+  0% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0; }
+
+  40% {
+    transform: perspective(400px) rotateX(-10deg); }
+
+  70% {
+    transform: perspective(400px) rotateX(10deg); }
+
+  100% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1; } }
+
+.flipInX {
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: flipInX;
+  -moz-backface-visibility: visible !important;
+  -moz-animation-name: flipInX;
+  -o-backface-visibility: visible !important;
+  -o-animation-name: flipInX;
+  backface-visibility: visible !important;
+  animation-name: flipInX; }
+
+@-webkit-keyframes flipOutX {
+  0% {
+    -webkit-transform: perspective(400px) rotateX(0deg);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateX(90deg);
+    opacity: 0; } }
+
+@-moz-keyframes flipOutX {
+  0% {
+    -moz-transform: perspective(400px) rotateX(0deg);
+    opacity: 1; }
+
+  100% {
+    -moz-transform: perspective(400px) rotateX(90deg);
+    opacity: 0; } }
+
+@-o-keyframes flipOutX {
+  0% {
+    -o-transform: perspective(400px) rotateX(0deg);
+    opacity: 1; }
+
+  100% {
+    -o-transform: perspective(400px) rotateX(90deg);
+    opacity: 0; } }
+
+@keyframes flipOutX {
+  0% {
+    transform: perspective(400px) rotateX(0deg);
+    opacity: 1; }
+
+  100% {
+    transform: perspective(400px) rotateX(90deg);
+    opacity: 0; } }
+
+.flipOutX {
+  -webkit-animation-name: flipOutX;
+  -webkit-backface-visibility: visible !important;
+  -moz-animation-name: flipOutX;
+  -moz-backface-visibility: visible !important;
+  -o-animation-name: flipOutX;
+  -o-backface-visibility: visible !important;
+  animation-name: flipOutX;
+  backface-visibility: visible !important; }
+
+@-webkit-keyframes flipInY {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    opacity: 0; }
+
+  40% {
+    -webkit-transform: perspective(400px) rotateY(-10deg); }
+
+  70% {
+    -webkit-transform: perspective(400px) rotateY(10deg); }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateY(0deg);
+    opacity: 1; } }
+
+@-moz-keyframes flipInY {
+  0% {
+    -moz-transform: perspective(400px) rotateY(90deg);
+    opacity: 0; }
+
+  40% {
+    -moz-transform: perspective(400px) rotateY(-10deg); }
+
+  70% {
+    -moz-transform: perspective(400px) rotateY(10deg); }
+
+  100% {
+    -moz-transform: perspective(400px) rotateY(0deg);
+    opacity: 1; } }
+
+@-o-keyframes flipInY {
+  0% {
+    -o-transform: perspective(400px) rotateY(90deg);
+    opacity: 0; }
+
+  40% {
+    -o-transform: perspective(400px) rotateY(-10deg); }
+
+  70% {
+    -o-transform: perspective(400px) rotateY(10deg); }
+
+  100% {
+    -o-transform: perspective(400px) rotateY(0deg);
+    opacity: 1; } }
+
+@keyframes flipInY {
+  0% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0; }
+
+  40% {
+    transform: perspective(400px) rotateY(-10deg); }
+
+  70% {
+    transform: perspective(400px) rotateY(10deg); }
+
+  100% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1; } }
+
+.flipInY {
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: flipInY;
+  -moz-backface-visibility: visible !important;
+  -moz-animation-name: flipInY;
+  -o-backface-visibility: visible !important;
+  -o-animation-name: flipInY;
+  backface-visibility: visible !important;
+  animation-name: flipInY; }
+
+@-webkit-keyframes flipOutY {
+  0% {
+    -webkit-transform: perspective(400px) rotateY(0deg);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: perspective(400px) rotateY(90deg);
+    opacity: 0; } }
+
+@-moz-keyframes flipOutY {
+  0% {
+    -moz-transform: perspective(400px) rotateY(0deg);
+    opacity: 1; }
+
+  100% {
+    -moz-transform: perspective(400px) rotateY(90deg);
+    opacity: 0; } }
+
+@-o-keyframes flipOutY {
+  0% {
+    -o-transform: perspective(400px) rotateY(0deg);
+    opacity: 1; }
+
+  100% {
+    -o-transform: perspective(400px) rotateY(90deg);
+    opacity: 0; } }
+
+@keyframes flipOutY {
+  0% {
+    transform: perspective(400px) rotateY(0deg);
+    opacity: 1; }
+
+  100% {
+    transform: perspective(400px) rotateY(90deg);
+    opacity: 0; } }
+
+.flipOutY {
+  -webkit-backface-visibility: visible !important;
+  -webkit-animation-name: flipOutY;
+  -moz-backface-visibility: visible !important;
+  -moz-animation-name: flipOutY;
+  -o-backface-visibility: visible !important;
+  -o-animation-name: flipOutY;
+  backface-visibility: visible !important;
+  animation-name: flipOutY; }
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+
+  100% {
+    opacity: 1; } }
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn; }
+
+@-webkit-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+
+@-o-keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0); } }
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  -moz-animation-name: fadeInUp;
+  -o-animation-name: fadeInUp;
+  animation-name: fadeInUp; }
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+
+@-o-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0); } }
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  -moz-animation-name: fadeInDown;
+  -o-animation-name: fadeInDown;
+  animation-name: fadeInDown; }
+
+@-webkit-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0); } }
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  -moz-animation-name: fadeInLeft;
+  -o-animation-name: fadeInLeft;
+  animation-name: fadeInLeft; }
+
+@-webkit-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0); } }
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px); }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  -moz-animation-name: fadeInRight;
+  -o-animation-name: fadeInRight;
+  animation-name: fadeInRight; }
+
+@-webkit-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(2000px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+
+@-o-keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(2000px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0); } }
+
+@keyframes fadeInUpBig {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px); }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.fadeInUpBig {
+  -webkit-animation-name: fadeInUpBig;
+  -moz-animation-name: fadeInUpBig;
+  -o-animation-name: fadeInUpBig;
+  animation-name: fadeInUpBig; }
+
+@-webkit-keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateY(0); } }
+
+@-o-keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-2000px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateY(0); } }
+
+@keyframes fadeInDownBig {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px); }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.fadeInDownBig {
+  -webkit-animation-name: fadeInDownBig;
+  -moz-animation-name: fadeInDownBig;
+  -o-animation-name: fadeInDownBig;
+  animation-name: fadeInDownBig; }
+
+@-webkit-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-2000px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0); } }
+
+@keyframes fadeInLeftBig {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px); }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.fadeInLeftBig {
+  -webkit-animation-name: fadeInLeftBig;
+  -moz-animation-name: fadeInLeftBig;
+  -o-animation-name: fadeInLeftBig;
+  animation-name: fadeInLeftBig; }
+
+@-webkit-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(2000px); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(2000px); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0); } }
+
+@keyframes fadeInRightBig {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px); }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.fadeInRightBig {
+  -webkit-animation-name: fadeInRightBig;
+  -moz-animation-name: fadeInRightBig;
+  -o-animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+
+  100% {
+    opacity: 0; } }
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  -moz-animation-name: fadeOut;
+  -o-animation-name: fadeOut;
+  animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px); } }
+
+@-moz-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-20px); } }
+
+@-o-keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateY(-20px); } }
+
+@keyframes fadeOutUp {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-20px); } }
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+  -moz-animation-name: fadeOutUp;
+  -o-animation-name: fadeOutUp;
+  animation-name: fadeOutUp; }
+
+@-webkit-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px); } }
+
+@-moz-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(20px); } }
+
+@-o-keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateY(20px); } }
+
+@keyframes fadeOutDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px); } }
+
+.fadeOutDown {
+  -webkit-animation-name: fadeOutDown;
+  -moz-animation-name: fadeOutDown;
+  -o-animation-name: fadeOutDown;
+  animation-name: fadeOutDown; }
+
+@-webkit-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-20px); } }
+
+@-moz-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-20px); } }
+
+@-o-keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-20px); } }
+
+@keyframes fadeOutLeft {
+  0% {
+    opacity: 1;
+    transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-20px); } }
+
+.fadeOutLeft {
+  -webkit-animation-name: fadeOutLeft;
+  -moz-animation-name: fadeOutLeft;
+  -o-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft; }
+
+@-webkit-keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(20px); } }
+
+@-moz-keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(20px); } }
+
+@-o-keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateX(20px); } }
+
+@keyframes fadeOutRight {
+  0% {
+    opacity: 1;
+    transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateX(20px); } }
+
+.fadeOutRight {
+  -webkit-animation-name: fadeOutRight;
+  -moz-animation-name: fadeOutRight;
+  -o-animation-name: fadeOutRight;
+  animation-name: fadeOutRight; }
+
+@-webkit-keyframes fadeOutUpBig {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px); } }
+
+@-moz-keyframes fadeOutUpBig {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px); } }
+
+@-o-keyframes fadeOutUpBig {
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateY(-2000px); } }
+
+@keyframes fadeOutUpBig {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px); } }
+
+.fadeOutUpBig {
+  -webkit-animation-name: fadeOutUpBig;
+  -moz-animation-name: fadeOutUpBig;
+  -o-animation-name: fadeOutUpBig;
+  animation-name: fadeOutUpBig; }
+
+@-webkit-keyframes fadeOutDownBig {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px); } }
+
+@-moz-keyframes fadeOutDownBig {
+  0% {
+    opacity: 1;
+    -moz-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(2000px); } }
+
+@-o-keyframes fadeOutDownBig {
+  0% {
+    opacity: 1;
+    -o-transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateY(2000px); } }
+
+@keyframes fadeOutDownBig {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateY(2000px); } }
+
+.fadeOutDownBig {
+  -webkit-animation-name: fadeOutDownBig;
+  -moz-animation-name: fadeOutDownBig;
+  -o-animation-name: fadeOutDownBig;
+  animation-name: fadeOutDownBig; }
+
+@-webkit-keyframes fadeOutLeftBig {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px); } }
+
+@-moz-keyframes fadeOutLeftBig {
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px); } }
+
+@-o-keyframes fadeOutLeftBig {
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-2000px); } }
+
+@keyframes fadeOutLeftBig {
+  0% {
+    opacity: 1;
+    transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px); } }
+
+.fadeOutLeftBig {
+  -webkit-animation-name: fadeOutLeftBig;
+  -moz-animation-name: fadeOutLeftBig;
+  -o-animation-name: fadeOutLeftBig;
+  animation-name: fadeOutLeftBig; }
+
+@-webkit-keyframes fadeOutRightBig {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px); } }
+
+@-moz-keyframes fadeOutRightBig {
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(2000px); } }
+
+@-o-keyframes fadeOutRightBig {
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateX(2000px); } }
+
+@keyframes fadeOutRightBig {
+  0% {
+    opacity: 1;
+    transform: translateX(0); }
+
+  100% {
+    opacity: 0;
+    transform: translateX(2000px); } }
+
+.fadeOutRightBig {
+  -webkit-animation-name: fadeOutRightBig;
+  -moz-animation-name: fadeOutRightBig;
+  -o-animation-name: fadeOutRightBig;
+  animation-name: fadeOutRightBig; }
+
+@-webkit-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(0.3); }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.05); }
+
+  70% {
+    -webkit-transform: scale(0.9); }
+
+  100% {
+    -webkit-transform: scale(1); } }
+
+@-moz-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -moz-transform: scale(0.3); }
+
+  50% {
+    opacity: 1;
+    -moz-transform: scale(1.05); }
+
+  70% {
+    -moz-transform: scale(0.9); }
+
+  100% {
+    -moz-transform: scale(1); } }
+
+@-o-keyframes bounceIn {
+  0% {
+    opacity: 0;
+    -o-transform: scale(0.3); }
+
+  50% {
+    opacity: 1;
+    -o-transform: scale(1.05); }
+
+  70% {
+    -o-transform: scale(0.9); }
+
+  100% {
+    -o-transform: scale(1); } }
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3); }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.05); }
+
+  70% {
+    transform: scale(0.9); }
+
+  100% {
+    transform: scale(1); } }
+
+.bounceIn {
+  -webkit-animation-name: bounceIn;
+  -moz-animation-name: bounceIn;
+  -o-animation-name: bounceIn;
+  animation-name: bounceIn; }
+
+@-webkit-keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px); }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(-30px); }
+
+  80% {
+    -webkit-transform: translateY(10px); }
+
+  100% {
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(2000px); }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(-30px); }
+
+  80% {
+    -moz-transform: translateY(10px); }
+
+  100% {
+    -moz-transform: translateY(0); } }
+
+@-o-keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(2000px); }
+
+  60% {
+    opacity: 1;
+    -o-transform: translateY(-30px); }
+
+  80% {
+    -o-transform: translateY(10px); }
+
+  100% {
+    -o-transform: translateY(0); } }
+
+@keyframes bounceInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(2000px); }
+
+  60% {
+    opacity: 1;
+    transform: translateY(-30px); }
+
+  80% {
+    transform: translateY(10px); }
+
+  100% {
+    transform: translateY(0); } }
+
+.bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  -moz-animation-name: bounceInUp;
+  -o-animation-name: bounceInUp;
+  animation-name: bounceInUp; }
+
+@-webkit-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px); }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateY(30px); }
+
+  80% {
+    -webkit-transform: translateY(-10px); }
+
+  100% {
+    -webkit-transform: translateY(0); } }
+
+@-moz-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px); }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateY(30px); }
+
+  80% {
+    -moz-transform: translateY(-10px); }
+
+  100% {
+    -moz-transform: translateY(0); } }
+
+@-o-keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    -o-transform: translateY(-2000px); }
+
+  60% {
+    opacity: 1;
+    -o-transform: translateY(30px); }
+
+  80% {
+    -o-transform: translateY(-10px); }
+
+  100% {
+    -o-transform: translateY(0); } }
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px); }
+
+  60% {
+    opacity: 1;
+    transform: translateY(30px); }
+
+  80% {
+    transform: translateY(-10px); }
+
+  100% {
+    transform: translateY(0); } }
+
+.bounceInDown {
+  -webkit-animation-name: bounceInDown;
+  -moz-animation-name: bounceInDown;
+  -o-animation-name: bounceInDown;
+  animation-name: bounceInDown; }
+
+@-webkit-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px); }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(30px); }
+
+  80% {
+    -webkit-transform: translateX(-10px); }
+
+  100% {
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px); }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(30px); }
+
+  80% {
+    -moz-transform: translateX(-10px); }
+
+  100% {
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-2000px); }
+
+  60% {
+    opacity: 1;
+    -o-transform: translateX(30px); }
+
+  80% {
+    -o-transform: translateX(-10px); }
+
+  100% {
+    -o-transform: translateX(0); } }
+
+@keyframes bounceInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-2000px); }
+
+  60% {
+    opacity: 1;
+    transform: translateX(30px); }
+
+  80% {
+    transform: translateX(-10px); }
+
+  100% {
+    transform: translateX(0); } }
+
+.bounceInLeft {
+  -webkit-animation-name: bounceInLeft;
+  -moz-animation-name: bounceInLeft;
+  -o-animation-name: bounceInLeft;
+  animation-name: bounceInLeft; }
+
+@-webkit-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px); }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translateX(-30px); }
+
+  80% {
+    -webkit-transform: translateX(10px); }
+
+  100% {
+    -webkit-transform: translateX(0); } }
+
+@-moz-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(2000px); }
+
+  60% {
+    opacity: 1;
+    -moz-transform: translateX(-30px); }
+
+  80% {
+    -moz-transform: translateX(10px); }
+
+  100% {
+    -moz-transform: translateX(0); } }
+
+@-o-keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(2000px); }
+
+  60% {
+    opacity: 1;
+    -o-transform: translateX(-30px); }
+
+  80% {
+    -o-transform: translateX(10px); }
+
+  100% {
+    -o-transform: translateX(0); } }
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px); }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-30px); }
+
+  80% {
+    transform: translateX(10px); }
+
+  100% {
+    transform: translateX(0); } }
+
+.bounceInRight {
+  -webkit-animation-name: bounceInRight;
+  -moz-animation-name: bounceInRight;
+  -o-animation-name: bounceInRight;
+  animation-name: bounceInRight; }
+
+@-webkit-keyframes bounceOut {
+  0% {
+    -webkit-transform: scale(1); }
+
+  25% {
+    -webkit-transform: scale(0.95); }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.1); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(0.3); } }
+
+@-moz-keyframes bounceOut {
+  0% {
+    -moz-transform: scale(1); }
+
+  25% {
+    -moz-transform: scale(0.95); }
+
+  50% {
+    opacity: 1;
+    -moz-transform: scale(1.1); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: scale(0.3); } }
+
+@-o-keyframes bounceOut {
+  0% {
+    -o-transform: scale(1); }
+
+  25% {
+    -o-transform: scale(0.95); }
+
+  50% {
+    opacity: 1;
+    -o-transform: scale(1.1); }
+
+  100% {
+    opacity: 0;
+    -o-transform: scale(0.3); } }
+
+@keyframes bounceOut {
+  0% {
+    transform: scale(1); }
+
+  25% {
+    transform: scale(0.95); }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1); }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.3); } }
+
+.bounceOut {
+  -webkit-animation-name: bounceOut;
+  -moz-animation-name: bounceOut;
+  -o-animation-name: bounceOut;
+  animation-name: bounceOut; }
+
+@-webkit-keyframes bounceOutUp {
+  0% {
+    -webkit-transform: translateY(0); }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(20px); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(-2000px); } }
+
+@-moz-keyframes bounceOutUp {
+  0% {
+    -moz-transform: translateY(0); }
+
+  20% {
+    opacity: 1;
+    -moz-transform: translateY(20px); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(-2000px); } }
+
+@-o-keyframes bounceOutUp {
+  0% {
+    -o-transform: translateY(0); }
+
+  20% {
+    opacity: 1;
+    -o-transform: translateY(20px); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateY(-2000px); } }
+
+@keyframes bounceOutUp {
+  0% {
+    transform: translateY(0); }
+
+  20% {
+    opacity: 1;
+    transform: translateY(20px); }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-2000px); } }
+
+.bounceOutUp {
+  -webkit-animation-name: bounceOutUp;
+  -moz-animation-name: bounceOutUp;
+  -o-animation-name: bounceOutUp;
+  animation-name: bounceOutUp; }
+
+@-webkit-keyframes bounceOutDown {
+  0% {
+    -webkit-transform: translateY(0); }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: translateY(-20px); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(2000px); } }
+
+@-moz-keyframes bounceOutDown {
+  0% {
+    -moz-transform: translateY(0); }
+
+  20% {
+    opacity: 1;
+    -moz-transform: translateY(-20px); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateY(2000px); } }
+
+@-o-keyframes bounceOutDown {
+  0% {
+    -o-transform: translateY(0); }
+
+  20% {
+    opacity: 1;
+    -o-transform: translateY(-20px); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateY(2000px); } }
+
+@keyframes bounceOutDown {
+  0% {
+    transform: translateY(0); }
+
+  20% {
+    opacity: 1;
+    transform: translateY(-20px); }
+
+  100% {
+    opacity: 0;
+    transform: translateY(2000px); } }
+
+.bounceOutDown {
+  -webkit-animation-name: bounceOutDown;
+  -moz-animation-name: bounceOutDown;
+  -o-animation-name: bounceOutDown;
+  animation-name: bounceOutDown; }
+
+@-webkit-keyframes bounceOutLeft {
+  0% {
+    -webkit-transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: translateX(20px); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(-2000px); } }
+
+@-moz-keyframes bounceOutLeft {
+  0% {
+    -moz-transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    -moz-transform: translateX(20px); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(-2000px); } }
+
+@-o-keyframes bounceOutLeft {
+  0% {
+    -o-transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    -o-transform: translateX(20px); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateX(-2000px); } }
+
+@keyframes bounceOutLeft {
+  0% {
+    transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    transform: translateX(20px); }
+
+  100% {
+    opacity: 0;
+    transform: translateX(-2000px); } }
+
+.bounceOutLeft {
+  -webkit-animation-name: bounceOutLeft;
+  -moz-animation-name: bounceOutLeft;
+  -o-animation-name: bounceOutLeft;
+  animation-name: bounceOutLeft; }
+
+@-webkit-keyframes bounceOutRight {
+  0% {
+    -webkit-transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    -webkit-transform: translateX(-20px); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(2000px); } }
+
+@-moz-keyframes bounceOutRight {
+  0% {
+    -moz-transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    -moz-transform: translateX(-20px); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(2000px); } }
+
+@-o-keyframes bounceOutRight {
+  0% {
+    -o-transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    -o-transform: translateX(-20px); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateX(2000px); } }
+
+@keyframes bounceOutRight {
+  0% {
+    transform: translateX(0); }
+
+  20% {
+    opacity: 1;
+    transform: translateX(-20px); }
+
+  100% {
+    opacity: 0;
+    transform: translateX(2000px); } }
+
+.bounceOutRight {
+  -webkit-animation-name: bounceOutRight;
+  -moz-animation-name: bounceOutRight;
+  -o-animation-name: bounceOutRight;
+  animation-name: bounceOutRight; }
+
+@-webkit-keyframes rotateIn {
+  0% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(-200deg);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0);
+    opacity: 1; } }
+
+@-moz-keyframes rotateIn {
+  0% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(-200deg);
+    opacity: 0; }
+
+  100% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(0);
+    opacity: 1; } }
+
+@-o-keyframes rotateIn {
+  0% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(-200deg);
+    opacity: 0; }
+
+  100% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(0);
+    opacity: 1; } }
+
+@keyframes rotateIn {
+  0% {
+    transform-origin: center center;
+    transform: rotate(-200deg);
+    opacity: 0; }
+
+  100% {
+    transform-origin: center center;
+    transform: rotate(0);
+    opacity: 1; } }
+
+.rotateIn {
+  -webkit-animation-name: rotateIn;
+  -moz-animation-name: rotateIn;
+  -o-animation-name: rotateIn;
+  animation-name: rotateIn; }
+
+@-webkit-keyframes rotateInUpLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; } }
+
+@-moz-keyframes rotateInUpLeft {
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; } }
+
+@-o-keyframes rotateInUpLeft {
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1; } }
+
+@keyframes rotateInUpLeft {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1; } }
+
+.rotateInUpLeft {
+  -webkit-animation-name: rotateInUpLeft;
+  -moz-animation-name: rotateInUpLeft;
+  -o-animation-name: rotateInUpLeft;
+  animation-name: rotateInUpLeft; }
+
+@-webkit-keyframes rotateInDownLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; } }
+
+@-moz-keyframes rotateInDownLeft {
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; } }
+
+@-o-keyframes rotateInDownLeft {
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1; } }
+
+@keyframes rotateInDownLeft {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1; } }
+
+.rotateInDownLeft {
+  -webkit-animation-name: rotateInDownLeft;
+  -moz-animation-name: rotateInDownLeft;
+  -o-animation-name: rotateInDownLeft;
+  animation-name: rotateInDownLeft; }
+
+@-webkit-keyframes rotateInUpRight {
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; } }
+
+@-moz-keyframes rotateInUpRight {
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; } }
+
+@-o-keyframes rotateInUpRight {
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1; } }
+
+@keyframes rotateInUpRight {
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(-90deg);
+    opacity: 0; }
+
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1; } }
+
+.rotateInUpRight {
+  -webkit-animation-name: rotateInUpRight;
+  -moz-animation-name: rotateInUpRight;
+  -o-animation-name: rotateInUpRight;
+  animation-name: rotateInUpRight; }
+
+@-webkit-keyframes rotateInDownRight {
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; } }
+
+@-moz-keyframes rotateInDownRight {
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; } }
+
+@-o-keyframes rotateInDownRight {
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1; } }
+
+@keyframes rotateInDownRight {
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+    opacity: 0; }
+
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1; } }
+
+.rotateInDownRight {
+  -webkit-animation-name: rotateInDownRight;
+  -moz-animation-name: rotateInDownRight;
+  -o-animation-name: rotateInDownRight;
+  animation-name: rotateInDownRight; }
+
+@-webkit-keyframes rotateOut {
+  0% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform-origin: center center;
+    -webkit-transform: rotate(200deg);
+    opacity: 0; } }
+
+@-moz-keyframes rotateOut {
+  0% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -moz-transform-origin: center center;
+    -moz-transform: rotate(200deg);
+    opacity: 0; } }
+
+@-o-keyframes rotateOut {
+  0% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -o-transform-origin: center center;
+    -o-transform: rotate(200deg);
+    opacity: 0; } }
+
+@keyframes rotateOut {
+  0% {
+    transform-origin: center center;
+    transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    transform-origin: center center;
+    transform: rotate(200deg);
+    opacity: 0; } }
+
+.rotateOut {
+  -webkit-animation-name: rotateOut;
+  -moz-animation-name: rotateOut;
+  -o-animation-name: rotateOut;
+  animation-name: rotateOut; }
+
+@-webkit-keyframes rotateOutUpLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0; } }
+
+@-moz-keyframes rotateOutUpLeft {
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0; } }
+
+@-o-keyframes rotateOutUpLeft {
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0; } }
+
+@keyframes rotateOutUpLeft {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(-90deg);
+    opacity: 0; } }
+
+.rotateOutUpLeft {
+  -webkit-animation-name: rotateOutUpLeft;
+  -moz-animation-name: rotateOutUpLeft;
+  -o-animation-name: rotateOutUpLeft;
+  animation-name: rotateOutUpLeft; }
+
+@-webkit-keyframes rotateOutDownLeft {
+  0% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform-origin: left bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0; } }
+
+@-moz-keyframes rotateOutDownLeft {
+  0% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -moz-transform-origin: left bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0; } }
+
+@-o-keyframes rotateOutDownLeft {
+  0% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -o-transform-origin: left bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0; } }
+
+@keyframes rotateOutDownLeft {
+  0% {
+    transform-origin: left bottom;
+    transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    transform-origin: left bottom;
+    transform: rotate(90deg);
+    opacity: 0; } }
+
+.rotateOutDownLeft {
+  -webkit-animation-name: rotateOutDownLeft;
+  -moz-animation-name: rotateOutDownLeft;
+  -o-animation-name: rotateOutDownLeft;
+  animation-name: rotateOutDownLeft; }
+
+@-webkit-keyframes rotateOutUpRight {
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(90deg);
+    opacity: 0; } }
+
+@-moz-keyframes rotateOutUpRight {
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(90deg);
+    opacity: 0; } }
+
+@-o-keyframes rotateOutUpRight {
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(90deg);
+    opacity: 0; } }
+
+@keyframes rotateOutUpRight {
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(90deg);
+    opacity: 0; } }
+
+.rotateOutUpRight {
+  -webkit-animation-name: rotateOutUpRight;
+  -moz-animation-name: rotateOutUpRight;
+  -o-animation-name: rotateOutUpRight;
+  animation-name: rotateOutUpRight; }
+
+@-webkit-keyframes rotateOutDownRight {
+  0% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform-origin: right bottom;
+    -webkit-transform: rotate(-90deg);
+    opacity: 0; } }
+
+@-moz-keyframes rotateOutDownRight {
+  0% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -moz-transform-origin: right bottom;
+    -moz-transform: rotate(-90deg);
+    opacity: 0; } }
+
+@-o-keyframes rotateOutDownRight {
+  0% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    -o-transform-origin: right bottom;
+    -o-transform: rotate(-90deg);
+    opacity: 0; } }
+
+@keyframes rotateOutDownRight {
+  0% {
+    transform-origin: right bottom;
+    transform: rotate(0);
+    opacity: 1; }
+
+  100% {
+    transform-origin: right bottom;
+    transform: rotate(-90deg);
+    opacity: 0; } }
+
+.rotateOutDownRight {
+  -webkit-animation-name: rotateOutDownRight;
+  -moz-animation-name: rotateOutDownRight;
+  -o-animation-name: rotateOutDownRight;
+  animation-name: rotateOutDownRight; }
+
+@-webkit-keyframes hinge {
+  0% {
+    -webkit-transform: rotate(0);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out; }
+
+  20%, 60% {
+    -webkit-transform: rotate(80deg);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out; }
+
+  40% {
+    -webkit-transform: rotate(60deg);
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out; }
+
+  80% {
+    -webkit-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -webkit-transform-origin: top left;
+    -webkit-animation-timing-function: ease-in-out; }
+
+  100% {
+    -webkit-transform: translateY(700px);
+    opacity: 0; } }
+
+@-moz-keyframes hinge {
+  0% {
+    -moz-transform: rotate(0);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out; }
+
+  20%, 60% {
+    -moz-transform: rotate(80deg);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out; }
+
+  40% {
+    -moz-transform: rotate(60deg);
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out; }
+
+  80% {
+    -moz-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -moz-transform-origin: top left;
+    -moz-animation-timing-function: ease-in-out; }
+
+  100% {
+    -moz-transform: translateY(700px);
+    opacity: 0; } }
+
+@-o-keyframes hinge {
+  0% {
+    -o-transform: rotate(0);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out; }
+
+  20%, 60% {
+    -o-transform: rotate(80deg);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out; }
+
+  40% {
+    -o-transform: rotate(60deg);
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out; }
+
+  80% {
+    -o-transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    -o-transform-origin: top left;
+    -o-animation-timing-function: ease-in-out; }
+
+  100% {
+    -o-transform: translateY(700px);
+    opacity: 0; } }
+
+@keyframes hinge {
+  0% {
+    transform: rotate(0);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out; }
+
+  20%, 60% {
+    transform: rotate(80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out; }
+
+  40% {
+    transform: rotate(60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out; }
+
+  80% {
+    transform: rotate(60deg) translateY(0);
+    opacity: 1;
+    transform-origin: top left;
+    animation-timing-function: ease-in-out; }
+
+  100% {
+    transform: translateY(700px);
+    opacity: 0; } }
+
+.hinge {
+  -webkit-animation-name: hinge;
+  -moz-animation-name: hinge;
+  -o-animation-name: hinge;
+  animation-name: hinge; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@-webkit-keyframes rollIn {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-100%) rotate(-120deg); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) rotate(0deg); } }
+
+@-moz-keyframes rollIn {
+  0% {
+    opacity: 0;
+    -moz-transform: translateX(-100%) rotate(-120deg); }
+
+  100% {
+    opacity: 1;
+    -moz-transform: translateX(0px) rotate(0deg); } }
+
+@-o-keyframes rollIn {
+  0% {
+    opacity: 0;
+    -o-transform: translateX(-100%) rotate(-120deg); }
+
+  100% {
+    opacity: 1;
+    -o-transform: translateX(0px) rotate(0deg); } }
+
+@keyframes rollIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%) rotate(-120deg); }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg); } }
+
+.rollIn {
+  -webkit-animation-name: rollIn;
+  -moz-animation-name: rollIn;
+  -o-animation-name: rollIn;
+  animation-name: rollIn; }
+
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+@-webkit-keyframes rollOut {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateX(0px) rotate(0deg); }
+
+  100% {
+    opacity: 0;
+    -webkit-transform: translateX(100%) rotate(120deg); } }
+
+@-moz-keyframes rollOut {
+  0% {
+    opacity: 1;
+    -moz-transform: translateX(0px) rotate(0deg); }
+
+  100% {
+    opacity: 0;
+    -moz-transform: translateX(100%) rotate(120deg); } }
+
+@-o-keyframes rollOut {
+  0% {
+    opacity: 1;
+    -o-transform: translateX(0px) rotate(0deg); }
+
+  100% {
+    opacity: 0;
+    -o-transform: translateX(100%) rotate(120deg); } }
+
+@keyframes rollOut {
+  0% {
+    opacity: 1;
+    transform: translateX(0px) rotate(0deg); }
+
+  100% {
+    opacity: 0;
+    transform: translateX(100%) rotate(120deg); } }
+
+.rollOut {
+  -webkit-animation-name: rollOut;
+  -moz-animation-name: rollOut;
+  -o-animation-name: rollOut;
+  animation-name: rollOut; }
+
+/* originally authored by Angelo Rohit - https://github.com/angelorohit */
+@-webkit-keyframes lightSpeedIn {
+  0% {
+    -webkit-transform: translateX(100%) skewX(-30deg);
+    opacity: 0; }
+
+  60% {
+    -webkit-transform: translateX(-20%) skewX(30deg);
+    opacity: 1; }
+
+  80% {
+    -webkit-transform: translateX(0%) skewX(-15deg);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    opacity: 1; } }
+
+@-moz-keyframes lightSpeedIn {
+  0% {
+    -moz-transform: translateX(100%) skewX(-30deg);
+    opacity: 0; }
+
+  60% {
+    -moz-transform: translateX(-20%) skewX(30deg);
+    opacity: 1; }
+
+  80% {
+    -moz-transform: translateX(0%) skewX(-15deg);
+    opacity: 1; }
+
+  100% {
+    -moz-transform: translateX(0%) skewX(0deg);
+    opacity: 1; } }
+
+@-o-keyframes lightSpeedIn {
+  0% {
+    -o-transform: translateX(100%) skewX(-30deg);
+    opacity: 0; }
+
+  60% {
+    -o-transform: translateX(-20%) skewX(30deg);
+    opacity: 1; }
+
+  80% {
+    -o-transform: translateX(0%) skewX(-15deg);
+    opacity: 1; }
+
+  100% {
+    -o-transform: translateX(0%) skewX(0deg);
+    opacity: 1; } }
+
+@keyframes lightSpeedIn {
+  0% {
+    transform: translateX(100%) skewX(-30deg);
+    opacity: 0; }
+
+  60% {
+    transform: translateX(-20%) skewX(30deg);
+    opacity: 1; }
+
+  80% {
+    transform: translateX(0%) skewX(-15deg);
+    opacity: 1; }
+
+  100% {
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1; } }
+
+.lightSpeedIn {
+  -webkit-animation-name: lightSpeedIn;
+  -moz-animation-name: lightSpeedIn;
+  -o-animation-name: lightSpeedIn;
+  animation-name: lightSpeedIn;
+  -webkit-animation-timing-function: ease-out;
+  -moz-animation-timing-function: ease-out;
+  -o-animation-timing-function: ease-out;
+  animation-timing-function: ease-out; }
+
+.animated.lightSpeedIn {
+  -webkit-animation-duration: 0.5s;
+  -moz-animation-duration: 0.5s;
+  -o-animation-duration: 0.5s;
+  animation-duration: 0.5s; }
+
+/* originally authored by Angelo Rohit - https://github.com/angelorohit */
+@-webkit-keyframes lightSpeedOut {
+  0% {
+    -webkit-transform: translateX(0%) skewX(0deg);
+    opacity: 1; }
+
+  100% {
+    -webkit-transform: translateX(100%) skewX(-30deg);
+    opacity: 0; } }
+
+@-moz-keyframes lightSpeedOut {
+  0% {
+    -moz-transform: translateX(0%) skewX(0deg);
+    opacity: 1; }
+
+  100% {
+    -moz-transform: translateX(100%) skewX(-30deg);
+    opacity: 0; } }
+
+@-o-keyframes lightSpeedOut {
+  0% {
+    -o-transform: translateX(0%) skewX(0deg);
+    opacity: 1; }
+
+  100% {
+    -o-transform: translateX(100%) skewX(-30deg);
+    opacity: 0; } }
+
+@keyframes lightSpeedOut {
+  0% {
+    transform: translateX(0%) skewX(0deg);
+    opacity: 1; }
+
+  100% {
+    transform: translateX(100%) skewX(-30deg);
+    opacity: 0; } }
+
+.lightSpeedOut {
+  -webkit-animation-name: lightSpeedOut;
+  -moz-animation-name: lightSpeedOut;
+  -o-animation-name: lightSpeedOut;
+  animation-name: lightSpeedOut;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in; }
+
+.animated.lightSpeedOut {
+  -webkit-animation-duration: 0.25s;
+  -moz-animation-duration: 0.25s;
+  -o-animation-duration: 0.25s;
+  animation-duration: 0.25s; }
+
+/* originally authored by Angelo Rohit - https://github.com/angelorohit */
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: skewX(9deg); }
+
+  10% {
+    -webkit-transform: skewX(-8deg); }
+
+  20% {
+    -webkit-transform: skewX(7deg); }
+
+  30% {
+    -webkit-transform: skewX(-6deg); }
+
+  40% {
+    -webkit-transform: skewX(5deg); }
+
+  50% {
+    -webkit-transform: skewX(-4deg); }
+
+  60% {
+    -webkit-transform: skewX(3deg); }
+
+  70% {
+    -webkit-transform: skewX(-2deg); }
+
+  80% {
+    -webkit-transform: skewX(1deg); }
+
+  90% {
+    -webkit-transform: skewX(0deg); }
+
+  100% {
+    -webkit-transform: skewX(0deg); } }
+
+@-moz-keyframes wiggle {
+  0% {
+    -moz-transform: skewX(9deg); }
+
+  10% {
+    -moz-transform: skewX(-8deg); }
+
+  20% {
+    -moz-transform: skewX(7deg); }
+
+  30% {
+    -moz-transform: skewX(-6deg); }
+
+  40% {
+    -moz-transform: skewX(5deg); }
+
+  50% {
+    -moz-transform: skewX(-4deg); }
+
+  60% {
+    -moz-transform: skewX(3deg); }
+
+  70% {
+    -moz-transform: skewX(-2deg); }
+
+  80% {
+    -moz-transform: skewX(1deg); }
+
+  90% {
+    -moz-transform: skewX(0deg); }
+
+  100% {
+    -moz-transform: skewX(0deg); } }
+
+@-o-keyframes wiggle {
+  0% {
+    -o-transform: skewX(9deg); }
+
+  10% {
+    -o-transform: skewX(-8deg); }
+
+  20% {
+    -o-transform: skewX(7deg); }
+
+  30% {
+    -o-transform: skewX(-6deg); }
+
+  40% {
+    -o-transform: skewX(5deg); }
+
+  50% {
+    -o-transform: skewX(-4deg); }
+
+  60% {
+    -o-transform: skewX(3deg); }
+
+  70% {
+    -o-transform: skewX(-2deg); }
+
+  80% {
+    -o-transform: skewX(1deg); }
+
+  90% {
+    -o-transform: skewX(0deg); }
+
+  100% {
+    -o-transform: skewX(0deg); } }
+
+@keyframes wiggle {
+  0% {
+    transform: skewX(9deg); }
+
+  10% {
+    transform: skewX(-8deg); }
+
+  20% {
+    transform: skewX(7deg); }
+
+  30% {
+    transform: skewX(-6deg); }
+
+  40% {
+    transform: skewX(5deg); }
+
+  50% {
+    transform: skewX(-4deg); }
+
+  60% {
+    transform: skewX(3deg); }
+
+  70% {
+    transform: skewX(-2deg); }
+
+  80% {
+    transform: skewX(1deg); }
+
+  90% {
+    transform: skewX(0deg); }
+
+  100% {
+    transform: skewX(0deg); } }
+
+.wiggle {
+  -webkit-animation-name: wiggle;
+  -moz-animation-name: wiggle;
+  -o-animation-name: wiggle;
+  animation-name: wiggle;
+  -webkit-animation-timing-function: ease-in;
+  -moz-animation-timing-function: ease-in;
+  -o-animation-timing-function: ease-in;
+  animation-timing-function: ease-in; }
+
+.animated.wiggle {
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  -o-animation-duration: 0.75s;
+  animation-duration: 0.75s; }
+  
+
+    </style>
+
+    <link href="https://hikotq.github.io/css/custom.css" media="screen, projection" rel="stylesheet" type="text/css">
+
+    <link href='//fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Slackey' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabimincho.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/earlyaccess/sawarabigothic.css" rel="stylesheet" >
+    <link href='//fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Amethysta' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    
+
+    <script type="text/javascript" src="https://hikotq.github.io/js/jquery-tapir.js"></script>
+
+    
+
+    <link rel="stylesheet" href="https://hikotq.github.io/css/hljs.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.6.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </head>
+
+
+<body>
+    <div id="wrapper">
+        <header id="header" class="inner">
+<h1 class="animated bounceInDown">
+    <div id="headerbg">
+        しばイヌとお茶
+    </div>
+</h1>
+
+<span class="subtitle">No Shiba, No Life</span>
+<br>
+
+
+<ul id="social-links" style="text-align:center; clear:both;">
+    
+    
+    
+    
+    
+    
+    
+    
+</ul>
+
+
+
+<ul id="nav">
+    <li id="ajax"><a href="https://hikotq.github.io/index.html">Home</a></li>
+    <li id="ajax"><a href="https://hikotq.github.io/archives/index.html">Archives</a></li>
+    <li id="ajax"><a href="https://hikotq.github.io/tags/index.html">Tags</a></li>
+    <li><a href="https://hikotq.github.io/atom.xml">RSS</a></li>
+    <li>
+    </li>
+</ul>
+
+</header>
+
+<div id="toload">
+
+    <div id="content" class="inner">
+        
+
+
+
+
+    
+    <script id="dsq-count-scr" src="//pipopa.disqus.com/count.js" async></script>
+    
+
+
+
+
+  <article class="post">
+    <h2 class="title"> 
+        <a href="/post/2019-03-26-rust-regex2/">regexクレートを歩く(固定文字検索編)</a>
+    </h2>
+    <div class="entry-content">
+    <div class="meta">
+        <div class="date">Published on: <time datetime='2019-03-26T21:00:13.000&#43;09:00' itemprop="datePublished">2019-03-26</time>
+</div>
+        <div class="tags">Tags: 
+
+<a href="https://hikotq.github.io/tags/rust">Rust</a>
+
+<a href="https://hikotq.github.io/tags/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE">正規表現</a>
+
+
+</div>
+    </div>
+        <p>前回の記事は<a href="http://hikotq.github.io/post/2019-01-03-rust-regex/">こちら</a></p>
+<h2 id="heading">固定文字列検索による最適化</h2>
+<p>固定文字列とはただの文字列のことです。例えば、「Cat」や「Dog」などは固定文字列です。
+正規表現であれば　例えば (Apple|Banana)* というような正規表現によって「Apple」 や 「AppleBanana」など複数の文字列を表すことができますが、固定文字列は単一の文字列のみを表します。
+一般に正規表現マッチングよりも固定文字列検索のほうが効率よく行うことができます。
+そこで、現代の正規表現エンジンではマッチングの高速化を図るために固定文字列検索手法が取り入れられているものもあります。
+具体的には入力として与えられた正規表現の先頭や末尾から固定文字列を括りだし、正規表現マッチングを行う開始位置を、括りだした固定文字列を検索することによって見つけ出します。</p>
+<p>例えば <code>http://([^/?#]*)?([?#]*)(\?([^#]*))?(#(.*))?</code>というような正規表現を使ってマッチングを行う場合には<code>http://</code>の部分を固定文字列として括りだし、固定文字列検索手法を用いてマッチング対象中から<code>http://</code>の位置を見つけ出し、その位置から正規表現マッチングを行ないます。</p>
+<p><img src="/images/2019-03-25-rust-regex2/fixed_string.png" alt=""></p>
+<h2 id="regex">regexクレートにおける固定文字列検索</h2>
+<p>さて本題ですが、Rustの正規表現ライブラリであるregexでも固定文字列検索手法が取り入れられてます。
+今回はregexクレート内で使用されている固定文字列検索手法についてまとめていこうと思います。
+ただ、今回はそれぞれの手法がどのようなときに使われるかを中心に見ていくので、各手法の実装の詳細については立ち入りません。</p>
+<p>固定文字列検索についてのコードはregexクレートの<a href="https://github.com/rust-lang/regex/tree/master/src/literal">src/literals</a>内に配置されてあります。
+使用される固定文字列マッチャは以下のようになっています。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#75715e">#[</span><span style="color:#75715e">derive(Clone, Debug)</span><span style="color:#75715e">]</span>
+<span style="color:#66d9ef">enum</span> <span style="color:#a6e22e">Matcher</span> {
+    <span style="color:#e6db74">/// No literals. (Never advances through the input.)
+</span><span style="color:#e6db74"></span>    Empty,
+    <span style="color:#e6db74">/// A set of four or more single byte literals.
+</span><span style="color:#e6db74"></span>    Bytes(SingleByteSet),
+    <span style="color:#e6db74">/// A single substring, find using memchr and frequency analysis.
+</span><span style="color:#e6db74"></span>    FreqyPacked(FreqyPacked),
+    <span style="color:#e6db74">/// A single substring, find using Boyer-Moore.
+</span><span style="color:#e6db74"></span>    BoyerMoore(BoyerMooreSearch),
+    <span style="color:#e6db74">/// An Aho-Corasick automaton.
+</span><span style="color:#e6db74"></span>    AC(FullAcAutomaton<span style="color:#f92672">&lt;</span>Literal<span style="color:#f92672">&gt;</span>),
+    <span style="color:#e6db74">/// A simd accelerated multiple string matcher. Used only for a small
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// number of small literals.
+</span><span style="color:#e6db74"></span>    TeddySSSE3(TeddySSSE3),
+    <span style="color:#e6db74">/// A simd accelerated multiple string matcher. Used only for a small
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// number of small literals. This uses 256-bit vectors.
+</span><span style="color:#e6db74"></span>    TeddyAVX2(TeddyAVX2),
+}
+</code></pre></div></p>
+<p>Matcherの選択はMatcher::new内で行われます。また、以後はprefixの場合について記述していますが、suffixの場合も基本的に同様です。</p>
+<h3 id="empty">Empty</h3>
+<p>Emptyは固定文字列検索を行わない場合に選択されます。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#66d9ef">if</span> lits.literals().is_empty() {
+            <span style="color:#66d9ef">return</span> Matcher::Empty;
+        }
+        <span style="color:#66d9ef">if</span> sset.dense.len() <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">26</span> {
+            <span style="color:#75715e">// Avoid trying to match a large number of single bytes.
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// This is *very* sensitive to a frequency analysis comparison
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// between the bytes in sset and the composition of the haystack.
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// No matter the size of sset, if its members all are rare in the
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// haystack, then it&#39;d be worth using it. How to tune this... IDK.
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// ---AG
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">return</span> Matcher::Empty;
+        }
+</code></pre></div>
+<p>ssetはprefixの先頭1文字(suffixの場合は末尾の1文字)として現れる文字の種類数です。regexクレートでは先頭1文字目に現れる文字が26種類以上の場合は固定文字列検索を行わないようです。
+固定文字列検索は基本的にマッチすることのない文字列をスキップすることで効率よく文字列を走査します。しかし、パターンに含まれる文字種が多いとスキップできる文字が少なくなるので効率が悪くなります。</p>
+<p>ただ、文字種が多くても、それらの各文字が検索対象の文字列中において十分低い出現頻度であれば効率よくスキップを行えるようです。(ソースコード内のコメントにはそこらへんのうまい調整の仕方は分からないみたいなことが書いてあるんだと思います)。</p>
+<h3 id="bytes">Bytes</h3>
+<p>Bytesはprefixの各パターンの最大長が1の場合に用いられます。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#66d9ef">if</span> sset.complete {
+            <span style="color:#66d9ef">return</span> Matcher::Bytes(sset);
+        }
+</code></pre></div></p>
+<p>Bytesのマッチングには<a href="https://github.com/BurntSushi/rust-memchr">rust-memchr</a>が使われています。rust-memchrはRustによって実装された高速なバイト文字検索ライブラリです。
+内部でSIMDを使用することで高速な検索を行います。</p>
+<h3 id="freqypacked">FreqyPacked</h3>
+<p>prefixのパターンが1つだけの場合にはBoyerMooreか、FreqyPackedが使用されます。
+prefixが(Dog|Cat) というようなパターンで表されている場合はprefixになりうる文字列が「Dog」もしくは「Cat」というように複数になるのこれらのマッチャは使われません。prefixが複数の場合のマッチャについては後述します。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#66d9ef">if</span> lits.literals().len() <span style="color:#f92672">=</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> {
+            <span style="color:#66d9ef">let</span> lit <span style="color:#f92672">=</span> lits.literals()[<span style="color:#ae81ff">0</span>].to_vec();
+            <span style="color:#66d9ef">if</span> BoyerMooreSearch::should_use(lit.as_slice()) {
+                <span style="color:#66d9ef">return</span> Matcher::BoyerMoore(BoyerMooreSearch::new(lit));
+            } <span style="color:#66d9ef">else</span> {
+                <span style="color:#66d9ef">return</span> Matcher::FreqyPacked(FreqyPacked::new(lit));
+            }
+        }
+</code></pre></div>
+<p>まずはFreqyPackedについて説明します。
+FreqyPackedは文字の頻度解析を利用して高速なマッチングを行います。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">new</span>(pat: Vec<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">u8</span><span style="color:#f92672">&gt;</span>) -&gt; <span style="color:#a6e22e">FreqyPacked</span> {
+        <span style="color:#66d9ef">if</span> pat.is_empty() {
+            <span style="color:#66d9ef">return</span> FreqyPacked::empty();
+        }
+
+        <span style="color:#75715e">// Find the rarest two bytes. Try to make them distinct (but it&#39;s not
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// required).
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> rare1 <span style="color:#f92672">=</span> pat[<span style="color:#ae81ff">0</span>];
+        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> rare2 <span style="color:#f92672">=</span> pat[<span style="color:#ae81ff">0</span>];
+        <span style="color:#66d9ef">for</span> b <span style="color:#66d9ef">in</span> pat[<span style="color:#ae81ff">1</span>..].iter().cloned() {
+            <span style="color:#66d9ef">if</span> freq_rank(b) <span style="color:#f92672">&lt;</span> freq_rank(rare1) {
+                rare1 <span style="color:#f92672">=</span> b;
+            }
+        }
+        <span style="color:#66d9ef">for</span> <span style="color:#f92672">&amp;</span>b <span style="color:#66d9ef">in</span> <span style="color:#f92672">&amp;</span>pat {
+            <span style="color:#66d9ef">if</span> rare1 <span style="color:#f92672">=</span><span style="color:#f92672">=</span> rare2 {
+                rare2 <span style="color:#f92672">=</span> b
+            } <span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> b <span style="color:#f92672">!</span><span style="color:#f92672">=</span> rare1 <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> freq_rank(b) <span style="color:#f92672">&lt;</span> freq_rank(rare2) {
+                rare2 <span style="color:#f92672">=</span> b;
+            }
+        }
+
+        <span style="color:#75715e">// And find the offsets of their last occurrences.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">let</span> rare1i <span style="color:#f92672">=</span> pat.iter().rposition(<span style="color:#f92672">|</span><span style="color:#f92672">&amp;</span>b<span style="color:#f92672">|</span> b <span style="color:#f92672">=</span><span style="color:#f92672">=</span> rare1).unwrap();
+        <span style="color:#66d9ef">let</span> rare2i <span style="color:#f92672">=</span> pat.iter().rposition(<span style="color:#f92672">|</span><span style="color:#f92672">&amp;</span>b<span style="color:#f92672">|</span> b <span style="color:#f92672">=</span><span style="color:#f92672">=</span> rare2).unwrap();
+
+        <span style="color:#66d9ef">let</span> char_len <span style="color:#f92672">=</span> char_len_lossy(<span style="color:#f92672">&amp;</span>pat);
+        FreqyPacked {
+            pat: <span style="color:#a6e22e">pat</span>,
+            char_len: <span style="color:#a6e22e">char_len</span>,
+            rare1: <span style="color:#a6e22e">rare1</span>,
+            rare1i: <span style="color:#a6e22e">rare1i</span>,
+            rare2: <span style="color:#a6e22e">rare2</span>,
+            rare2i: <span style="color:#a6e22e">rare2i</span>,
+        }
+</code></pre></div>
+<p>上のコード上のrare1はrare2は与えられたprefixパターンに現れる文字の中で、事前の統計結果において最も出現頻度の低い文字2つを表します。この出現頻度の低い文字を先程同様SIMDを使用して見つけ出すことでマッチングの高速化を図っています。頻度が低ければスキップできる文字が多くなるので効率が上がるという寸法です。頻度解析は<a href="https://github.com/rust-lang/regex/blob/master/scripts/frequencies.py">scripts/frequencies.py</a>で行われ、解析結果は<a href="https://github.com/rust-lang/regex/blob/master/src/freqs.rs">src/freq.rs
+</a>内に埋め込まれています。以下のコーパスが頻度解析に使われたようです。</p>
+<ul>
+<li><a href="https://ja.wikipedia.org/wiki/%E3%82%B6%E3%83%BB%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E3%83%BB%E3%83%95%E3%82%A1%E3%82%AF%E3%83%88%E3%83%96%E3%83%83%E3%82%AF">ザ・ワールド・ファクトブック</a></li>
+<li>rustcのソースコード</li>
+<li>七十人訳聖書</li>
+</ul>
+<p>ザ・ワールド・ファクトブックはCIAが毎年出している世界中の情報をまとめた本らしいです。あと、聖書が使われているってなんかすごいですね&hellip;。</p>
+<p>日本語に対してマッチングを行う場合は日本語のコーパスを使ったりしたほうが当然マッチング効率良くなりそうな気がしますが、その辺はどうなんですかね。</p>
+<h3 id="boyermoore">BoyerMoore</h3>
+<p>BoyerMooreは基本的にはFreqyPackedよりも遅いらしいです。それだけSIMDが強力ということなのだと思います。ただ、いくつかのケースではBoyerMooreの方が速くなることもあるようです。</p>
+<h4 id="heading1">検索対象文字列がランダムな場合</h4>
+<p>この場合、各文字の出現頻度は同じくらいになるので頻度解析による効率化は望めません。しかし、事前に検索対象文字列がランダムであることを知ることはできないとコメントに書いてあったので、このケースについては特に対処されていないようです。</p>
+<h4 id="prefix">prefixのパターンが高出現頻度の文字で構成されている場合</h4>
+<p>この場合も同様に頻度解析を使った効率化は望めません。また、このケースはprefixのパターンを調べることで事前に知ることができるので最適化を施すことが容易です。</p>
+<h4 id="prefix1">prefixのパターンが長い場合</h4>
+<p>SIMDは一度に扱えるデータの量に制限があるのでprefixが長い場合にはBoyerMooreによるスキップの効率の方が良くなってSIMDを上回ることができそうです。</p>
+<p>これらのケースを考慮してregexクレートではprefixのパターンが長ければ長いほどBoyerMooreが使われやすくなるようになっています。BoyerMoore法を使うかどうかを判定する部分の詳しい実装は<a href="https://github.com/rust-lang/regex/blob/master/src/literal/mod.rs#L714-L742">ここ</a>。</p>
+<h3 id="teddy">Teddy</h3>
+<p>ここからはprefixのパターンが複数ある場合に用いられる手法です。
+TeddyはHyperscanで用いられている複数文字列マッチングアルゴリズムでSIMDを使って高速なマッチングを行えるようです。アルゴリズムについての詳細は<a href="https://github.com/rust-lang/regex/blob/master/src/literal/teddy_ssse3/imp.rs">src/literal/teddy_sse3/imp.rs</a>に詳しく記されています。今回調べていて、この辺りの話に興味が出てきたので、このアルゴリズムについてもいずれ、また別の記事としてまとめるかもしれないです。</p>
+<h3 id="ahocorasick">Aho-Corasick</h3>
+<p>Teddyを使うにはSSE3、もしくはAVX2が必要です。それらが使えない場合やprefixの先頭1文字に現れうる文字が1種類の場合にはAho-Corasickが使われます。Aho-Corasickは伝統的な複数文字列マッチング手法として知られている手法で特殊なオートマトンを用いてマッチングを行うことでパターンの数とマッチング対象テキストの長さに対して線形時間でマッチングが行なえます。</p>
+<h2 id="heading2">まとめ</h2>
+<p>今回はregexクレートで用いられている固定文字列検索手法についてまとめました。自分の当初の予想では学校で習ったBoyer-Moore法のようなアルゴリズムがメインで使われているのかなと思っていましたが、実際はSIMDがメインで使われていて、ハードウェアレベルの最適化強いな〜という感じでした。
+<a href="https://www.usenix.org/conference/nsdi19/presentation/wang-xiang">この論文</a>辺りにそこらへんのことが色々書いてそうなのでこれから読んでいきたいと思います。</p>
+
+    </div>
+
+<div class="meta">
+    
+    
+    <span class="comments"><a href="/post/2019-03-26-rust-regex2/#disqus_thread">Comments</a></span>
+    
+    
+</div>
+</article>
+
+  <article class="post">
+    <h2 class="title"> 
+        <a href="/post/2019-01-03-rust-regex/">regexクレートを歩く</a>
+    </h2>
+    <div class="entry-content">
+    <div class="meta">
+        <div class="date">Published on: <time datetime='2019-01-03T20:10:14.000&#43;09:00' itemprop="datePublished">2019-01-03</time>
+</div>
+        <div class="tags">Tags: 
+
+<a href="https://hikotq.github.io/tags/rust">Rust</a>
+
+<a href="https://hikotq.github.io/tags/%E6%AD%A3%E8%A6%8F%E8%A1%A8%E7%8F%BE">正規表現</a>
+
+
+</div>
+    </div>
+        <h2 id="heading">概要</h2>
+<p><a href="https://github.com/rust-lang/regex">regex</a>クレートはRustで書かれた正規表現ライブラリで高速なgrepとして有名な<a href="https://github.com/BurntSushi/ripgrep">ripgrep</a>などでも使用されている。
+今回はregexクレートを使用してRegex構造体を作成したときに内部ではどのようなことが行われているのかを見ていったのだが、色々こんがらがって来たので
+ここにメモを残すこととした。詳細にはあまり立ち入れていないがそれは今後の課題としたい。</p>
+<p>以下はRust1.31で正規表現を使用する場合のサンプルコード。なおregexクレートのバージョンはv1.1.0である。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">use</span> regex::Regex;
+<span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#66d9ef">let</span> re <span style="color:#f92672">=</span> Regex::new(<span style="color:#e6db74">&#34;HappyNewYear!*&#34;</span>).unwrap();
+}
+</code></pre></div>
+このコードをエントリポイントとして、ソースコードを読んでいく。</p>
+<h2 id="regexbuild">Regexのbuild</h2>
+<p>サンプルコードで生成しているRegex構造体はregexクレートの<a href="https://github.com/rust-lang/regex/blob/master/src/re_unicode.rs">src/re_unicode.rs</a>内にて以下のように定義されている。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#75715e">#[</span><span style="color:#75715e">derive(Clone)</span><span style="color:#75715e">]</span>
+<span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Regex</span>(<span style="color:#66d9ef">pub</span> Exec);
+
+<span style="color:#e6db74">/// Core regular expression methods.
+</span><span style="color:#e6db74"></span><span style="color:#66d9ef">impl</span> Regex {
+    <span style="color:#e6db74">/// Compiles a regular expression. Once compiled, it can be used repeatedly
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// to search, split or replace text in a string.
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">///
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// If an invalid expression is given, then an error is returned.
+</span><span style="color:#e6db74"></span>    <span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">new</span>(re: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; Result<span style="color:#f92672">&lt;</span>Regex, Error<span style="color:#f92672">&gt;</span> {
+        RegexBuilder::new(re).build()
+    }
+    <span style="color:#e6db74">/// 省略
+</span><span style="color:#e6db74"></span>}
+</code></pre></div></p>
+<p>Regex構造体はExec構造体をフィールドとして持つ。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">Exec</span> {
+    <span style="color:#e6db74">/// All read only state.
+</span><span style="color:#e6db74"></span>    ro: <span style="color:#a6e22e">Arc</span><span style="color:#f92672">&lt;</span>ExecReadOnly<span style="color:#f92672">&gt;</span>,
+    <span style="color:#e6db74">/// Caches for the various matching engines.
+</span><span style="color:#e6db74"></span>    cache: <span style="color:#a6e22e">CachedThreadLocal</span><span style="color:#f92672">&lt;</span>ProgramCache<span style="color:#f92672">&gt;</span>,
+}
+</code></pre></div>
+<p>Exec構造体はフィールドとしてマッチングに必要な情報が格納されたExecReadOnly構造体と、マッチング時にキャッシュとして使用するための構造体を持っている。</p>
+<p>ExecReadOnly構造体は以下のように定義されている。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#75715e">#[</span><span style="color:#75715e">derive(Debug)</span><span style="color:#75715e">]</span>
+<span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">ExecReadOnly</span> {
+    <span style="color:#e6db74">/// The original regular expressions given by the caller to compile.
+</span><span style="color:#e6db74"></span>    res: Vec<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">&gt;</span>,
+    <span style="color:#e6db74">/// A compiled program that is used in the NFA simulation and backtracking.
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// It can be byte-based or Unicode codepoint based.
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">///
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// N.B. It is not possibly to make this byte-based from the public API.
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// It is only used for testing byte based programs in the NFA simulations.
+</span><span style="color:#e6db74"></span>    nfa: <span style="color:#a6e22e">Program</span>,
+    <span style="color:#e6db74">/// A compiled byte based program for DFA execution. This is only used
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// if a DFA can be executed. (Currently, only word boundary assertions are
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// not supported.) Note that this program contains an embedded `.*?`
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// preceding the first capture group, unless the regex is anchored at the
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// beginning.
+</span><span style="color:#e6db74"></span>    dfa: <span style="color:#a6e22e">Program</span>,
+    <span style="color:#e6db74">/// The same as above, except the program is reversed (and there is no
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// preceding `.*?`). This is used by the DFA to find the starting location
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// of matches.
+</span><span style="color:#e6db74"></span>    dfa_reverse: <span style="color:#a6e22e">Program</span>,
+    <span style="color:#e6db74">/// A set of suffix literals extracted from the regex.
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">///
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// Prefix literals are stored on the `Program`, since they are used inside
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// the matching engines.
+</span><span style="color:#e6db74"></span>    suffixes: <span style="color:#a6e22e">LiteralSearcher</span>,
+    <span style="color:#e6db74">/// match_type encodes as much upfront knowledge about how we&#39;re going to
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// execute a search as possible.
+</span><span style="color:#e6db74"></span>    match_type: <span style="color:#a6e22e">MatchType</span>,
+}
+</code></pre></div>
+<p>ExecReadOnly構造体にはオリジナルの正規表現やnfaなどマッチング時に使用するVMコードと思しきフィールドが格納されているようである。
+ここではひとまず、引き続き処理を追う。</p>
+<p>Regex::new()を呼ぶと内部でRegexBuilderに引数の正規表現が渡り、build()を呼び出している。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#e6db74">/// A configurable builder for a regular expression.
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">///
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">/// A builder can be used to configure how the regex is built, for example, by
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">/// setting the default flags (which can be overridden in the expression
+</span><span style="color:#e6db74"></span><span style="color:#e6db74">/// itself) or setting various limits.
+</span><span style="color:#e6db74"></span><span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">struct</span> <span style="color:#a6e22e">RegexBuilder</span>(RegexOptions);
+
+<span style="color:#66d9ef">impl</span> RegexBuilder {
+    <span style="color:#e6db74">/// Create a new regular expression builder with the given pattern.
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">///
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// If the pattern is invalid, then an error will be returned when
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// `build` is called.
+</span><span style="color:#e6db74"></span>    <span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">new</span>(pattern: <span style="color:#66d9ef">&amp;</span><span style="color:#66d9ef">str</span>) -&gt; <span style="color:#a6e22e">RegexBuilder</span> {
+        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> builder <span style="color:#f92672">=</span> RegexBuilder(RegexOptions::default());
+        builder.<span style="color:#ae81ff">0.</span>pats.push(pattern.to_owned());
+        builder
+    }
+
+    <span style="color:#e6db74">/// Consume the builder and compile the regular expression.
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">///
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// Note that calling `as_str` on the resulting `Regex` will produce the
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// pattern given to `new` verbatim. Notably, it will not incorporate any
+</span><span style="color:#e6db74"></span>    <span style="color:#e6db74">/// of the flags set on this builder.
+</span><span style="color:#e6db74"></span>    <span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">build</span>(<span style="color:#f92672">&amp;</span>self) -&gt; Result<span style="color:#f92672">&lt;</span>Regex, Error<span style="color:#f92672">&gt;</span> {
+        ExecBuilder::new_options(self.<span style="color:#ae81ff">0.</span>clone())
+            .only_utf8(<span style="color:#75715e">$only_utf8</span>)
+            .build()
+            .map(Regex::from)
+    }
+    <span style="color:#e6db74">/// 省略
+</span><span style="color:#e6db74"></span>}
+</code></pre></div>
+<p>RegexBuilderはnewされるとRegexOptionsの設定を行っている。RegexOptionsでは複数行に対してマッチを行うかどうかや、任意の文字にマッチする「.」を改行にマッチさせるかなどを設定することができる。
+そしてbuild()を呼ぶとExecBuilderにRegexOptionsが引き渡されExec構造体が作成される。</p>
+<h2 id="execbuild">Execのbuild</h2>
+<p>ExecBuilderのbuildメソッドは以下のようになっている。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">impl</span> ExecBuilder {
+    <span style="color:#e6db74">/// Build an executor that can run a regular expression.
+</span><span style="color:#e6db74"></span>    <span style="color:#66d9ef">pub</span> <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">build</span>(self) -&gt; Result<span style="color:#f92672">&lt;</span>Exec, Error<span style="color:#f92672">&gt;</span> {
+        <span style="color:#75715e">// Special case when we have no patterns to compile.
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// This can happen when compiling a regex set.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> self.options.pats.is_empty() {
+            <span style="color:#66d9ef">let</span> ro <span style="color:#f92672">=</span> Arc::new(ExecReadOnly {
+                res: <span style="color:#a6e22e">vec</span><span style="color:#f92672">!</span>[],
+                nfa: <span style="color:#a6e22e">Program</span>::new(),
+                dfa: <span style="color:#a6e22e">Program</span>::new(),
+                dfa_reverse: <span style="color:#a6e22e">Program</span>::new(),
+                suffixes: <span style="color:#a6e22e">LiteralSearcher</span>::empty(),
+                match_type: <span style="color:#a6e22e">MatchType</span>::Nothing,
+            });
+            <span style="color:#66d9ef">return</span> Ok(Exec {
+                ro: <span style="color:#a6e22e">ro</span>,
+                cache: <span style="color:#a6e22e">CachedThreadLocal</span>::new(),
+            });
+        }
+        <span style="color:#66d9ef">let</span> parsed <span style="color:#f92672">=</span> self.parse()<span style="color:#f92672">?</span>;
+        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> nfa <span style="color:#f92672">=</span> Compiler::new()
+            .size_limit(self.options.size_limit)
+            .bytes(self.bytes <span style="color:#f92672">|</span><span style="color:#f92672">|</span> parsed.bytes)
+            .only_utf8(self.only_utf8)
+            .compile(<span style="color:#f92672">&amp;</span>parsed.exprs)<span style="color:#f92672">?</span>;
+        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> dfa <span style="color:#f92672">=</span> Compiler::new()
+            .size_limit(self.options.size_limit)
+            .dfa(<span style="color:#66d9ef">true</span>)
+            .only_utf8(self.only_utf8)
+            .compile(<span style="color:#f92672">&amp;</span>parsed.exprs)<span style="color:#f92672">?</span>;
+        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> dfa_reverse <span style="color:#f92672">=</span> Compiler::new()
+            .size_limit(self.options.size_limit)
+            .dfa(<span style="color:#66d9ef">true</span>)
+            .only_utf8(self.only_utf8)
+            .reverse(<span style="color:#66d9ef">true</span>)
+            .compile(<span style="color:#f92672">&amp;</span>parsed.exprs)<span style="color:#f92672">?</span>;
+
+        <span style="color:#66d9ef">let</span> prefixes <span style="color:#f92672">=</span> parsed.prefixes.unambiguous_prefixes();
+        <span style="color:#66d9ef">let</span> suffixes <span style="color:#f92672">=</span> parsed.suffixes.unambiguous_suffixes();
+        nfa.prefixes <span style="color:#f92672">=</span> LiteralSearcher::prefixes(prefixes);
+        dfa.prefixes <span style="color:#f92672">=</span> nfa.prefixes.clone();
+        dfa.dfa_size_limit <span style="color:#f92672">=</span> self.options.dfa_size_limit;
+        dfa_reverse.dfa_size_limit <span style="color:#f92672">=</span> self.options.dfa_size_limit;
+
+        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> ro <span style="color:#f92672">=</span> ExecReadOnly {
+            res: <span style="color:#a6e22e">self</span>.options.pats,
+            nfa: <span style="color:#a6e22e">nfa</span>,
+            dfa: <span style="color:#a6e22e">dfa</span>,
+            dfa_reverse: <span style="color:#a6e22e">dfa_reverse</span>,
+            suffixes: <span style="color:#a6e22e">LiteralSearcher</span>::suffixes(suffixes),
+            match_type: <span style="color:#a6e22e">MatchType</span>::Nothing,
+        };
+        ro.match_type <span style="color:#f92672">=</span> ro.choose_match_type(self.match_type);
+
+        <span style="color:#66d9ef">let</span> ro <span style="color:#f92672">=</span> Arc::new(ro);
+        Ok(Exec {
+            ro: <span style="color:#a6e22e">ro</span>,
+            cache: <span style="color:#a6e22e">CachedThreadLocal</span>::new(),
+        })
+    }
+}
+</code></pre></div>
+<p>少し長いので複数に分けて上の方から順に見て行く。</p>
+<h3 id="heading1">正規表現パターンが与えられなかった場合の処理</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#75715e">// Special case when we have no patterns to compile.
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// This can happen when compiling a regex set.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> self.options.pats.is_empty() {
+            <span style="color:#66d9ef">let</span> ro <span style="color:#f92672">=</span> Arc::new(ExecReadOnly {
+                res: <span style="color:#a6e22e">vec</span><span style="color:#f92672">!</span>[],
+                nfa: <span style="color:#a6e22e">Program</span>::new(),
+                dfa: <span style="color:#a6e22e">Program</span>::new(),
+                dfa_reverse: <span style="color:#a6e22e">Program</span>::new(),
+                suffixes: <span style="color:#a6e22e">LiteralSearcher</span>::empty(),
+                match_type: <span style="color:#a6e22e">MatchType</span>::Nothing,
+            });
+            <span style="color:#66d9ef">return</span> Ok(Exec {
+                ro: <span style="color:#a6e22e">ro</span>,
+                cache: <span style="color:#a6e22e">CachedThreadLocal</span>::new(),
+            });
+        }
+</code></pre></div>
+<p>ここは正規表現のパターンが与えられなかった場合の処理。
+regexクレートには<a href="https://docs.rs/regex/1.1.0/regex/struct.RegexSet.html">RegexSet</a>を使うことで複数の正規表現に対するマッチ結果を同時に得ることができるという機能があり、このときに正規表現が１つも与えられなかったときにこのifの内側に入るようだ。
+ifの内側ではmatch_typeにどんな入力にもマッチしないことを表すMatchType::Nothingが入れられている。</p>
+<h3 id="heading2">正規表現のパースとコンパイル</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#66d9ef">let</span> parsed <span style="color:#f92672">=</span> self.parse()<span style="color:#f92672">?</span>;
+        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> nfa <span style="color:#f92672">=</span> Compiler::new()
+            .size_limit(self.options.size_limit)
+            .bytes(self.bytes <span style="color:#f92672">|</span><span style="color:#f92672">|</span> parsed.bytes)
+            .only_utf8(self.only_utf8)
+            .compile(<span style="color:#f92672">&amp;</span>parsed.exprs)<span style="color:#f92672">?</span>;
+        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> dfa <span style="color:#f92672">=</span> Compiler::new()
+            .size_limit(self.options.size_limit)
+            .dfa(<span style="color:#66d9ef">true</span>)
+            .only_utf8(self.only_utf8)
+            .compile(<span style="color:#f92672">&amp;</span>parsed.exprs)<span style="color:#f92672">?</span>;
+        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> dfa_reverse <span style="color:#f92672">=</span> Compiler::new()
+            .size_limit(self.options.size_limit)
+            .dfa(<span style="color:#66d9ef">true</span>)
+            .only_utf8(self.only_utf8)
+            .reverse(<span style="color:#66d9ef">true</span>)
+            .compile(<span style="color:#f92672">&amp;</span>parsed.exprs)<span style="color:#f92672">?</span>;
+</code></pre></div>
+<p>regexクレートでは正規表現をNFA, DFA, そして逆向きのDFAに事前にコンパイルして用意しているようだ。
+regexクレートのマッチングは基本的にDFAで実行可能な場合はDFAで実行するようになっているが、キャプチャが必要な場合などにはnfaも使うような実装になっている。
+逆向きのDFAはDFAだけでマッチングを行ったときにマッチの開始位置を得るときなどに使われている。</p>
+<h3 id="prefixsuffixdfa">Prefix、Suffixの取得とDFAサイズの上限の設定</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#66d9ef">let</span> prefixes <span style="color:#f92672">=</span> parsed.prefixes.unambiguous_prefixes();
+        <span style="color:#66d9ef">let</span> suffixes <span style="color:#f92672">=</span> parsed.suffixes.unambiguous_suffixes();
+        nfa.prefixes <span style="color:#f92672">=</span> LiteralSearcher::prefixes(prefixes);
+        dfa.prefixes <span style="color:#f92672">=</span> nfa.prefixes.clone();
+        dfa.dfa_size_limit <span style="color:#f92672">=</span> self.options.dfa_size_limit;
+        dfa_reverse.dfa_size_limit <span style="color:#f92672">=</span> self.options.dfa_size_limit;
+</code></pre></div>
+<p>正規表現によるマッチングを高速化する手法として、正規表現の中に含まれる固定文字列をBoyer-Moore法などの高速検索手法を利用して高速化する手法がある。
+上記のコードにおけるprefixesとsuffixesはそれぞれ正規表現の先頭と末尾の固定文字列でありregexクレートではこれらの固定文字列を利用してマッチングの高速化を図っている。</p>
+<p>dfa_size_limitは文字通りDFAのサイズ上限を表している。regexクレートではDFAマッチングにおいて、マッチングを行いながらDFAを構築していくonline DFAという方式を取っている。
+このとき一度構築された状態はキャッシュされ、再度利用される際に再構築する手間を省くようになっている。
+しかし、キャッシュされた状態の数がdfa_size_limitを超えた場合はキャッシュをリフレッシュするようになっている。
+また、キャッシュのリフレッシュが頻繁に発生する場合にはマッチングがNFAに切り替わるようになっている。</p>
+<h3 id="heading3">マッチタイプの選択</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> ro <span style="color:#f92672">=</span> ExecReadOnly {
+            res: <span style="color:#a6e22e">self</span>.options.pats,
+            nfa: <span style="color:#a6e22e">nfa</span>,
+            dfa: <span style="color:#a6e22e">dfa</span>,
+            dfa_reverse: <span style="color:#a6e22e">dfa_reverse</span>,
+            suffixes: <span style="color:#a6e22e">LiteralSearcher</span>::suffixes(suffixes),
+            match_type: <span style="color:#a6e22e">MatchType</span>::Nothing,
+        };
+        ro.match_type <span style="color:#f92672">=</span> ro.choose_match_type(self.match_type);
+</code></pre></div>
+<p>ここではマッチタイプの選択を行っている。マッチタイプの選択はchoose_match_typeというメソッドで行われているのでchoose_match_typeの内容を見てみる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust"><span style="color:#66d9ef">impl</span> ExecReadOnly {
+    <span style="color:#66d9ef">fn</span> <span style="color:#a6e22e">choose_match_type</span>(<span style="color:#f92672">&amp;</span>self, hint: Option<span style="color:#f92672">&lt;</span>MatchType<span style="color:#f92672">&gt;</span>) -&gt; <span style="color:#a6e22e">MatchType</span> {
+        <span style="color:#66d9ef">use</span> self::MatchType::<span style="color:#f92672">*</span>;
+        <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> Some(Nfa(_)) <span style="color:#f92672">=</span> hint {
+            <span style="color:#66d9ef">return</span> hint.unwrap();
+        }
+        <span style="color:#75715e">// If the NFA is empty, then we&#39;ll never match anything.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> self.nfa.insts.is_empty() {
+            <span style="color:#66d9ef">return</span> Nothing;
+        }
+        <span style="color:#75715e">// If our set of prefixes is complete, then we can use it to find
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// a match in lieu of a regex engine. This doesn&#39;t quite work well in
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// the presence of multiple regexes, so only do it when there&#39;s one.
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// TODO(burntsushi): Also, don&#39;t try to match literals if the regex is
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// partially anchored. We could technically do it, but we&#39;d need to
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// create two sets of literals: all of them and then the subset that
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// aren&#39;t anchored. We would then only search for all of them when at
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// the beginning of the input and use the subset in all other cases.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> self.res.len() <span style="color:#f92672">=</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> {
+            <span style="color:#66d9ef">if</span> self.nfa.prefixes.complete() {
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">if</span> self.nfa.is_anchored_start {
+                    Literal(MatchLiteralType::AnchoredStart)
+                } <span style="color:#66d9ef">else</span> {
+                    Literal(MatchLiteralType::Unanchored)
+                };
+            }
+            <span style="color:#66d9ef">if</span> self.suffixes.complete() {
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">if</span> self.nfa.is_anchored_end {
+                    Literal(MatchLiteralType::AnchoredEnd)
+                } <span style="color:#66d9ef">else</span> {
+                    <span style="color:#75715e">// This case shouldn&#39;t happen. When the regex isn&#39;t
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e">// anchored, then complete prefixes should imply complete
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e">// suffixes.
+</span><span style="color:#75715e"></span>                    Literal(MatchLiteralType::Unanchored)
+                };
+            }
+        }
+        <span style="color:#75715e">// If we can execute the DFA, then we totally should.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> dfa::can_exec(<span style="color:#f92672">&amp;</span>self.dfa) {
+            <span style="color:#75715e">// Regex sets require a slightly specialized path.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> self.res.len() <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> {
+                <span style="color:#66d9ef">return</span> DfaMany;
+            }
+            <span style="color:#75715e">// If the regex is anchored at the end but not the start, then
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// just match in reverse from the end of the haystack.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">!</span>self.nfa.is_anchored_start <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> self.nfa.is_anchored_end {
+                <span style="color:#66d9ef">return</span> DfaAnchoredReverse;
+            }
+            <span style="color:#75715e">// If there&#39;s a longish suffix literal, then it might be faster
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// to look for that first.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> self.should_suffix_scan() {
+                <span style="color:#66d9ef">return</span> DfaSuffix;
+            }
+            <span style="color:#75715e">// Fall back to your garden variety forward searching lazy DFA.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">return</span> Dfa;
+        }
+        <span style="color:#75715e">// We&#39;re so totally hosed.
+</span><span style="color:#75715e"></span>        Nfa(MatchNfaType::Auto)
+    }
+  }
+}
+</code></pre></div>
+<p>これも長いので少しずつ見ていく。</p>
+<h4 id="nfa">マッチングタイプが指定されている場合と、NFAがからの場合</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#66d9ef">use</span> self::MatchType::<span style="color:#f92672">*</span>;
+        <span style="color:#66d9ef">if</span> <span style="color:#66d9ef">let</span> Some(Nfa(_)) <span style="color:#f92672">=</span> hint {
+            <span style="color:#66d9ef">return</span> hint.unwrap();
+        }
+        <span style="color:#75715e">// If the NFA is empty, then we&#39;ll never match anything.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> self.nfa.insts.is_empty() {
+            <span style="color:#66d9ef">return</span> Nothing;
+        }
+</code></pre></div>
+<p>hintとしてmatch_typeの指定(NFAのみ)があればそれを返し、nfaがからの場合はNothingを返すようになっている。</p>
+<h4 id="heading4">固定文字列検索だけでマッチングが行える場合?</h4>
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#75715e">// If our set of prefixes is complete, then we can use it to find
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// a match in lieu of a regex engine. This doesn&#39;t quite work well in
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// the presence of multiple regexes, so only do it when there&#39;s one.
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">//
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// TODO(burntsushi): Also, don&#39;t try to match literals if the regex is
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// partially anchored. We could technically do it, but we&#39;d need to
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// create two sets of literals: all of them and then the subset that
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// aren&#39;t anchored. We would then only search for all of them when at
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// the beginning of the input and use the subset in all other cases.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> self.res.len() <span style="color:#f92672">=</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span> {
+            <span style="color:#66d9ef">if</span> self.nfa.prefixes.complete() {
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">if</span> self.nfa.is_anchored_start {
+                    Literal(MatchLiteralType::AnchoredStart)
+                } <span style="color:#66d9ef">else</span> {
+                    Literal(MatchLiteralType::Unanchored)
+                };
+            }
+            <span style="color:#66d9ef">if</span> self.suffixes.complete() {
+                <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">if</span> self.nfa.is_anchored_end {
+                    Literal(MatchLiteralType::AnchoredEnd)
+                } <span style="color:#66d9ef">else</span> {
+                    <span style="color:#75715e">// This case shouldn&#39;t happen. When the regex isn&#39;t
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e">// anchored, then complete prefixes should imply complete
+</span><span style="color:#75715e"></span>                    <span style="color:#75715e">// suffixes.
+</span><span style="color:#75715e"></span>                    Literal(MatchLiteralType::Unanchored)
+                };
+            }
+        }
+</code></pre></div>
+ここらへんに関する処理はまだちょっと読めてない。与えられた正規表現が固定文字列検索だけでマッチングできる場合は正規表現エンジンを使わないで固定文字検索手法を使うということだと思われる。</p>
+<h4 id="dfa">DFAが使える場合</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#75715e">// If we can execute the DFA, then we totally should.
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> dfa::can_exec(<span style="color:#f92672">&amp;</span>self.dfa) {
+            <span style="color:#75715e">// Regex sets require a slightly specialized path.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> self.res.len() <span style="color:#f92672">&gt;</span><span style="color:#f92672">=</span> <span style="color:#ae81ff">2</span> {
+                <span style="color:#66d9ef">return</span> DfaMany;
+            }
+            <span style="color:#75715e">// If the regex is anchored at the end but not the start, then
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// just match in reverse from the end of the haystack.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> <span style="color:#f92672">!</span>self.nfa.is_anchored_start <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> self.nfa.is_anchored_end {
+                <span style="color:#66d9ef">return</span> DfaAnchoredReverse;
+            }
+            <span style="color:#75715e">// If there&#39;s a longish suffix literal, then it might be faster
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// to look for that first.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> self.should_suffix_scan() {
+                <span style="color:#66d9ef">return</span> DfaSuffix;
+            }
+            <span style="color:#75715e">// Fall back to your garden variety forward searching lazy DFA.
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">return</span> Dfa;
+        }
+</code></pre></div>
+<p>ここではDFAが実行できるかを確認している。suffixが長い場合は固定文字列検索でsuffixを見つけたあと逆向きDFAでマッチングを行うようになっている。
+can_execでは元になるNFAの状態数が多すぎないかとDFAでは使用できないUnicode命令が含まれていないかを確認している。</p>
+<h4 id="heading5">全部無理な場合</h4>
+<p><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">        <span style="color:#75715e">// We&#39;re so totally hosed.
+</span><span style="color:#75715e"></span>        Nfa(MatchNfaType::Auto)
+</code></pre></div>
+上記のマッチタイプがすべて使用できない場合はNFAが使用される。regexクレートのNFAエンジンにはバックトラッキング型とPikeのVM型の2つが存在していて、基本的にはバックトラッキング型のほうが性能が良いので使用されるが、NFAの状態数が多い場合にはPikeのVM型が使用される。バックトラッキング型には<a href="https://swtch.com/~rsc/regexp/regexp1.html">バックトラックによってマッチング時間が指数関数的に増加する問題</a>があることが知られているが、regexクレートでは一度通った状態をキャッシュして再度通った場合にはそのスレッドのマッチングを中止するようにすることで、メモリ効率と引き換えに線形時間でのマッチングが保証されている。これによってNFAのサイズが小さい場合には高速にマッチングが行えるようだ。</p>
+<h2 id="heading6">まとめ</h2>
+<p>regexクレートでは複数のエンジンを駆使して効率の良いマッチングを行えるようにしているということが分かった。
+固定文字列関係はもう少し調べる必要がありそう。後、各正規表現エンジンの実装もちゃんと読んでいきたい。</p>
+
+    </div>
+
+<div class="meta">
+    
+    
+    <span class="comments"><a href="/post/2019-01-03-rust-regex/#disqus_thread">Comments</a></span>
+    
+    
+</div>
+</article>
+
+  <article class="post">
+    <h2 class="title"> 
+        <a href="/post/2018-10-18-inversuscon/">INVERSUScon 参加記</a>
+    </h2>
+    <div class="entry-content">
+    <div class="meta">
+        <div class="date">Published on: <time datetime='2018-10-18T19:35:15.000&#43;09:00' itemprop="datePublished">2018-10-18</time>
+</div>
+        <div class="tags">Tags: 
+
+<a href="https://hikotq.github.io/tags/inversus">INVERSUS</a>
+
+<a href="https://hikotq.github.io/tags/inversuscon">INVERSUScon</a>
+
+
+</div>
+    </div>
+        <p>2018年10月13日に東京は中野にあるRed Bull Gaming Sphere Tokyoにて<a href="https://www.inversusgame.com/">INVERSUS</a>のイベント「<a href="https://inversus.jp/inversuscon2018-report/">INVERSUScon</a>」が開催されました。
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/bgiVemW6Akg" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+INVERSUSとは自分の弾を発射することで敵の陣地を自分の陣地に塗り替えたりしながら戦う2Dシューティングゲームです。
+様々なプラットフォームで発売されているのでとりあえず買いましょう。</p>
+<ul>
+<li><a href="https://store.steampowered.com/app/432980/INVERSUS_Deluxe/">INVERSUS Deluxe on Steam</a></li>
+<li><a href="https://store.playstation.com/ja-jp/product/JP0186-CUSA06076_00-INVERSUSPS400000">Inversus Deluxe | 公式PlayStation™Store 日本</a></li>
+<li><a href="https://ec.nintendo.com/JP/ja/titles/70010000000544">Nintendo Switch｜ダウンロード購入｜INVERSUS Deluxe</a></li>
+<li><a href="https://www.microsoft.com/ja-jp/store/p/inversus-deluxe/bvnhk66b8908">INVERSUS Deluxe を購入 - Microsoft Store ja-JP</a></li>
+</ul>
+<h2 id="heading">イベントに参加するまで</h2>
+<p>INVERSUS関連のイベントは以前Gongonさんに誘われたりしていたのですが、東京は自分の居住地から遠く離れていることもあって中々厳しいなという状況でした。しかし、そんなある日INVERSUS開発者のアカウントがこんなツイートをしました。
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Trip to Japan in October? Yes! I’ll have more details on what day we will have an INVERSUS community event soon (in Tokyo)! 🇯🇵</p>&mdash; INVERSUS (@InversusGame) <a href="https://twitter.com/InversusGame/status/1018383717956575237?ref_src=twsrc%5Etfw">July 15, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+なんとINVERSUS開発者が来日してイベントに参加するとのこと。これは行くしかないと思いました。
+そして、しばらくしてINVERSUS JPからもイベントの正式な発表があり参加する運びとなりました。</p>
+<h2 id="heading1">イベント当日</h2>
+<p>イベント当日なんとか中野駅までたどり着き、駅からGoo◯leマップの案内に従って会場を目指したら、会場の建物の裏側に案内されたようですがしばらく気づかず迷ってました。
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">ナビが表からではなく裏側をナビしてたから場所がわからんかったぞ</p>&mdash; カルゴウ (@karugou) <a href="https://twitter.com/karugou/status/1050986258497921025?ref_src=twsrc%5Etfw">October 13, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+同じ目に遭った方もいたようです。アプリに頼りきってはいけない&hellip;</p>
+<p>裏側に案内された可能性に気づいて、反対方向に回ると<del>叫び声</del>盛り上がっている声が聞こえてきたのですぐにこちらが正しい場所なのだとわかりました。</p>
+<p><blockquote class="twitter-tweet"><p lang="ja" dir="ltr">【飛び入り歓迎🏁】<a href="https://twitter.com/hashtag/INVERSUScon?src=hash&amp;ref_src=twsrc%5Etfw">#INVERSUScon</a> は本日15時開場です。<br>お気軽に中野の <a href="https://twitter.com/hashtag/RedBullGamingSphereTokyo?src=hash&amp;ref_src=twsrc%5Etfw">#RedBullGamingSphereTokyo</a> へお越しください📣<br><br>詳細はこちら&gt;&gt;<a href="https://t.co/j5AtDRXoGx">https://t.co/j5AtDRXoGx</a>  <a href="https://twitter.com/hashtag/INVERSUS?src=hash&amp;ref_src=twsrc%5Etfw">#INVERSUS</a> <a href="https://t.co/M5NcUZwy4A">pic.twitter.com/M5NcUZwy4A</a></p>&mdash; INVERSUS JP(日本コミュニティ) (@inversusjp) <a href="https://twitter.com/inversusjp/status/1050981085616599040?ref_src=twsrc%5Etfw">October 13, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+会場はこんな感じでした。かっこいい（恍惚）</p>
+<p>会場に入ってまず最初に開発者の<a href="https://twitter.com/RyanJuckett">Ryan Jukket</a>さんと対戦し、少しお話することができました。Twitterアイコン可愛いねと言ってくれました。柴犬の可愛さに国境はない。</p>
+<h3 id="inversus">たのしいINVERSUS講座</h3>
+<p>INVERSUSトッププレイヤーの<a href="https://twitter.com/uo6uo6">Gongon</a>さんによるINVERSUS講座が開講されました。トーナメント前に講座があるなんて手厚い。内容はINVERSUSのアイテムの説明など基本的なことから実践的なテクニックまでかなりボリュームのあるものとなっていました。経験的に知っていることもしっかりと整理された状態で見ることでより理解が深まったように思われました。
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr"><a href="https://twitter.com/hashtag/INVERSUScon?src=hash&amp;ref_src=twsrc%5Etfw">#INVERSUScon</a> 世界一位、Gongonさんによるインバーサス講座 <a href="https://twitter.com/uo6uo6?ref_src=twsrc%5Etfw">@uo6uo6</a> <a href="https://t.co/hHrYpGhEFk">pic.twitter.com/hHrYpGhEFk</a></p>&mdash; INVERSUS JP(日本コミュニティ) (@inversusjp) <a href="https://twitter.com/inversusjp/status/1051010632030375942?ref_src=twsrc%5Etfw">October 13, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+講義で使用されたスライドは後日どこかに公開されるようなので気になる方は<a href="https://twitter.com/uo6uo6">Gongon</a>さんのTwitterをチェックしてみると良いかもしれません。</p>
+<h3 id="heading2">トーナメント大会</h3>
+<p>今回のもう一つのメインイベントであるトーナメント大会も開催されました。優勝者と準優勝者には非売品グッズが贈呈されると発表されていたのもあって、やる気満々でした。</p>
+<p><img src="https://inversus.jp/content/images/2018/10/tournament.jpg" alt="トーナメント表 ( より引用)"></p>
+<p>しかし、私は準決勝で負けてしまいました。大会は準決勝で私に勝った<a href="https://twitter.com/karugou">カルゴウ</a>さんがそのまま優勝しました。最後勝てそうだっただけに悔しさが残ります。次があれば次こそは勝ちたい。</p>
+<h3 id="heading3">懇親会</h3>
+<p><strong>ピザ</strong>が出ました。美味しかったです。あとは他の参加者とおしゃべりしたりINVERSUSしたり、INVERSUSしたり&hellip;時間があっという間に過ぎていきました。</p>
+<h3 id="heading4">まとめ</h3>
+<p>この手のイベントに参加するのは初めてでしたがすごく楽しめました。オンラインでゲームするのもいいですが、オフラインでやると盛り上がりがすごくてとても臨場感がありすごかったです（語彙力）</p>
+<p>イベントを主催してくださった関係者の皆様ありがとうございました！</p>
+
+    </div>
+
+<div class="meta">
+    
+    
+    <span class="comments"><a href="/post/2018-10-18-inversuscon/#disqus_thread">Comments</a></span>
+    
+    
+</div>
+</article>
+
+  <article class="post">
+    <h2 class="title"> 
+        <a href="/post/2018-05-27-ctf4b-writeup/">CTF4b 2018 writeup</a>
+    </h2>
+    <div class="entry-content">
+    <div class="meta">
+        <div class="date">Published on: <time datetime='2018-05-27T16:22:41.000&#43;09:00' itemprop="datePublished">2018-05-27</time>
+</div>
+        <div class="tags">Tags: 
+
+<a href="https://hikotq.github.io/tags/ctf">ctf</a>
+
+<a href="https://hikotq.github.io/tags/writeup">writeup</a>
+
+
+</div>
+    </div>
+        <p>約1ヶ月前に新しく研究室に加わった後輩達の勧めでCTFを始めました。
+その後彼らの管理しているCTFサイトの問題を解いたりしていたのですが、今回初心者向けのCTFとしてSECCON Beginners CTFが開かれるとのことで後輩達とチームを組んで出場する運びとなりました。</p>
+<p>いわく、「解いた問題のwriteupを公開するまでがCTF」らしいのでここにwriteupを記します。</p>
+<h3 id="warmup-plain-mail">[Warmup] plain mail</h3>
+<p>与えられたパケットを調べるとパスワード付きのzipファイルとパスワードが見つかるのでzipファイルを解凍するとフラグが得られる。</p>
+<p><code>ctf4b{email_with_encrypted_file}</code></p>
+<h3 id="rsa-is-power">RSA is Power</h3>
+<p>与えられた$N$を素因数分解して、$N=p\times q$ となるような $p, q$ を求めます。</p>
+<pre><code>p = 299681192390656691733849646142066664329
+q = 324144336644773773047359441106332937713
+</code></pre><p>あとは $de \equiv 1\bmod (p-1)(q-1)$ を満す $d$ を拡張ユークリッド互除法を用いて求めてやれば、
+<a href="https://ja.wikipedia.org/wiki/RSA%E6%9A%97%E5%8F%B7">Wikipeda</a>に載っているとおりに $C^{d} \bmod N$ とすれば
+復号できます。</p>
+<pre><code>d = 88509020092584531671107468782943602124921999287671161687233461555074737950465
+C^d mod N =  0x63746634627b35696d706c655f7273345f31735f336173795f6630725f757d 
+</code></pre><p>得られるフラグは16進数表記なので適当に文字列に変換します。</p>
+<p><code>ctf4b{5imple_rs4_1s_3asy_f0r_u}</code></p>
+<h3 id="streaming">Streaming</h3>
+<p>フラグの先頭がctf4bであることが分かっているのでそれを使って初期seedを求め、そこから次々にseedを求めながら複合していけばフラグを得られます。</p>
+<p>こんな感じのコードを書きました。</p>
+<pre><code>def next(seed):
+    A = 37423
+    B = 61781
+    C = 34607
+    return (A*seed+B)%C
+
+f = open('encrypted', 'rb')
+encrypted = f.read()
+decrypted = &quot;&quot;
+d = int(hex(ord(encrypted[0])), 16) + int(hex(ord(encrypted[0+1])), 16) * 256
+#init seed
+seed = d ^ 25460
+decrypted += chr(int(hex(d^seed)[2:4], 16)) + chr(int(hex(d^seed)[4:6], 16))
+print(hex(d^seed))
+for i in range(1, len(encrypted)//2):
+    d = int(hex(ord(encrypted[2*i])), 16) + int(hex(ord(encrypted[2*i+1])), 16) * 256
+    seed = next(seed)
+    d = d^seed
+    print(hex(d))
+    if len(hex(d)) &lt;= 4:
+        decrypted += chr(int(hex(d)[2:4], 16))
+    else:
+        decrypted += chr(int(hex(d)[2:4], 16)) + chr(int(hex(d)[4:6], 16))
+print(decrypted)
+</code></pre><p><code>ctf4b{lcg-is-easily-predictable}</code></p>
+<h3 id="heading">てけいさんえくすとりーむず</h3>
+<p>サーバにアクセスすると四則演算を解かされます。
+自分は<strong>えくすとりーむ</strong>なてけいさんのプロではないのでプログラムにやらせました。</p>
+<pre><code>import socket
+import re
+
+class Netcat:
+    &quot;&quot;&quot; Python 'netcat like' module &quot;&quot;&quot;
+    def __init__(self, ip, port):
+        self.buff = &quot;&quot;
+        self.socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.socket.connect((ip, port))
+
+    def read(self, length = 1024):
+        &quot;&quot;&quot; Read 1024 bytes off the socket &quot;&quot;&quot;
+        return self.socket.recv(length)
+
+    def read_until(self, data):
+        &quot;&quot;&quot; Read data into the buffer until we have data &quot;&quot;&quot;
+        while not data in self.buff:
+            self.buff += self.socket.recv(1024)
+        pos = self.buff.find(data)
+        rval = self.buff[:pos + len(data)]
+        self.buff = self.buff[pos + len(data):]
+        return rval
+
+    def write(self, data):
+        self.socket.send(data)
+        
+    def close(self):
+        self.socket.close()
+
+nc = Netcat('133.242.234.140', 8690)
+nc.read_until('Stage.1)')
+for i in range(1, 101):
+    print(nc.read_until('Stage.'+str(i)+')'))
+    expr = nc.read_until('=')
+    expr = expr.strip()
+    m = re.match(r'(\d+)\s*(\+|-|\*|/)\s*(\d+).*', expr)
+    term1 = int(m.group(1))
+    op = m.group(2)
+    term2 = int(m.group(3))
+    ans = &quot;&quot;
+    if op == &quot;+&quot;:
+        ans = term1 + term2
+    elif op == &quot;-&quot;:
+        ans = term1 - term2
+    elif op == &quot;*&quot;:
+        ans = term1 * term2
+    elif op == &quot;/&quot;:
+        ans = term1 / term2
+    print(expr), 
+    print(ans)
+    nc.write(str(ans) + '\n')
+print(nc.read())
+</code></pre><p>Netcatクラスの部分のコードは<a href="https://gist.github.com/leonjza/f35a7252babdf77c8421">ここ</a>のやつをそのまんま使ってます。</p>
+<p>これを実行すると</p>
+<pre><code>(Stage.1)
+908 * 509 = 462172
+ (Stage.2)
+925 * 757 = 700225
+ (Stage.3)
+940 - 850 = 90
+ (Stage.4)
+618 + 921 = 1539
+ (Stage.5)
+625 - 536 = 89
+    .
+    .
+    .
+ (Stage.100)
+860 + 823 = 1683
+Congrats.
+Flag is: &quot;ctf4b{ekusutori-mu&gt;tekeisann&gt;bigina-zu&gt;2018}&quot;
+</code></pre><p><code>ctf4b{ekusutori-mu&gt;tekeisann&gt;bigina-zu&gt;2018}</code></p>
+<h2 id="heading1">感想</h2>
+<p>初心者向けということで簡単な問題だけかと思ってたんですが、結構難しい問題もあったなという印象でした。
+でも、Cryptoは結構解けたので良かったです。Pwn, Reversingはｾﾞﾝｾﾞﾝﾜｶﾗﾝｶｯﾀ。</p>
+
+    </div>
+
+<div class="meta">
+    
+    
+    <span class="comments"><a href="/post/2018-05-27-ctf4b-writeup/#disqus_thread">Comments</a></span>
+    
+    
+</div>
+</article>
+
+
+
+
+    </div>
+    <footer id="footer">
+    <div style="display:inline">
+    Copyright &copy; 2019
+    
+    pipopa
+    . Powered by <a href="http://gohugo.io" target="_blank">Hugo</a> |
+    Theme is <a href="https://github.com/wd/hugo-fabric">hugo-fabric</a>, fork from <a href="https://github.com/wd/hexo-fabric">hexo-fabric</a> by <a href="https://wdicc.com">wd</a>
+</div>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+    });
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    </footer>
+    <script src="https://hikotq.github.io/js/fabric.js"></script>
+
+
+</div>
+</div>
+<script src="https://hikotq.github.io/js/jquery.ui.totop.js" type="text/javascript"></script>
+<script type="text/javascript">
+ 
+;(function($){$().UItoTop({easingType:'easeOutCirc'});})(jQuery);
+ 
+</script>
+</body>
+</html>

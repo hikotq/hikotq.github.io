@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>しばイヌとお茶</title>
+    <link>https://hikotq.github.io/</link>
+    <description>Recent content on しばイヌとお茶</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2019 21:00:13 +0900</lastBuildDate>
+    
+	<atom:link href="https://hikotq.github.io/atom.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>regexクレートを歩く(固定文字検索編)</title>
+      <link>https://hikotq.github.io/post/2019-03-26-rust-regex2/</link>
+      <pubDate>Tue, 26 Mar 2019 21:00:13 +0900</pubDate>
+      
+      <guid>https://hikotq.github.io/post/2019-03-26-rust-regex2/</guid>
+      <description>前回の記事はこちら
+固定文字列検索による最適化 固定文字列とはただの文字列のことです。例えば、「Cat」や「Dog」などは固定文字列です。 正規表現であれば　例えば (Apple|Banana)* というような正規表現によって「Apple」 や 「AppleBanana」など複数の文字列を表すことができますが、固定文字列は単一の文字列のみを表します。 一般に正規表現マッチングよりも固定文字列検索のほうが効率よく行うことができます。 そこで、現代の正規表現エンジンではマッチングの高速化を図るために固定文字列検索手法が取り入れられているものもあります。 具体的には入力として与えられた正規表現の先頭や末尾から固定文字列を括りだし、正規表現マッチングを行う開始位置を、括りだした固定文字列を検索することによって見つけ出します。
+例えば http://([^/?#]*)?([?#]*)(\?([^#]*))?(#(.*))?というような正規表現を使ってマッチングを行う場合にはhttp://の部分を固定文字列として括りだし、固定文字列検索手法を用いてマッチング対象中からhttp://の位置を見つけ出し、その位置から正規表現マッチングを行ないます。
+regexクレートにおける固定文字列検索 さて本題ですが、Rustの正規表現ライブラリであるregexでも固定文字列検索手法が取り入れられてます。 今回はregexクレート内で使用されている固定文字列検索手法についてまとめていこうと思います。 ただ、今回はそれぞれの手法がどのようなときに使われるかを中心に見ていくので、各手法の実装の詳細については立ち入りません。
+固定文字列検索についてのコードはregexクレートのsrc/literals内に配置されてあります。 使用される固定文字列マッチャは以下のようになっています。 #[derive(Clone, Debug)] enum Matcher { /// No literals. (Never advances through the input.)  Empty, /// A set of four or more single byte literals.  Bytes(SingleByteSet), /// A single substring, find using memchr and frequency analysis.  FreqyPacked(FreqyPacked), /// A single substring, find using Boyer-Moore.  BoyerMoore(BoyerMooreSearch), /// An Aho-Corasick automaton.</description>
+    </item>
+    
+    <item>
+      <title>regexクレートを歩く</title>
+      <link>https://hikotq.github.io/post/2019-01-03-rust-regex/</link>
+      <pubDate>Thu, 03 Jan 2019 20:10:14 +0900</pubDate>
+      
+      <guid>https://hikotq.github.io/post/2019-01-03-rust-regex/</guid>
+      <description>概要 regexクレートはRustで書かれた正規表現ライブラリで高速なgrepとして有名なripgrepなどでも使用されている。 今回はregexクレートを使用してRegex構造体を作成したときに内部ではどのようなことが行われているのかを見ていったのだが、色々こんがらがって来たので ここにメモを残すこととした。詳細にはあまり立ち入れていないがそれは今後の課題としたい。
+以下はRust1.31で正規表現を使用する場合のサンプルコード。なおregexクレートのバージョンはv1.1.0である。 use regex::Regex; fn main() { let re = Regex::new(&amp;#34;HappyNewYear!*&amp;#34;).unwrap(); }  このコードをエントリポイントとして、ソースコードを読んでいく。
+Regexのbuild サンプルコードで生成しているRegex構造体はregexクレートのsrc/re_unicode.rs内にて以下のように定義されている。 #[derive(Clone)] pub struct Regex(pub Exec); /// Core regular expression methods. impl Regex { /// Compiles a regular expression. Once compiled, it can be used repeatedly  /// to search, split or replace text in a string.  ///  /// If an invalid expression is given, then an error is returned.  pub fn new(re: &amp;amp;str) -&amp;gt; Result&amp;lt;Regex, Error&amp;gt; { RegexBuilder::new(re).</description>
+    </item>
+    
+    <item>
+      <title>INVERSUScon 参加記</title>
+      <link>https://hikotq.github.io/post/2018-10-18-inversuscon/</link>
+      <pubDate>Thu, 18 Oct 2018 19:35:15 +0900</pubDate>
+      
+      <guid>https://hikotq.github.io/post/2018-10-18-inversuscon/</guid>
+      <description>2018年10月13日に東京は中野にあるRed Bull Gaming Sphere TokyoにてINVERSUSのイベント「INVERSUScon」が開催されました。   INVERSUSとは自分の弾を発射することで敵の陣地を自分の陣地に塗り替えたりしながら戦う2Dシューティングゲームです。 様々なプラットフォームで発売されているのでとりあえず買いましょう。
+ INVERSUS Deluxe on Steam Inversus Deluxe | 公式PlayStation™Store 日本 Nintendo Switch｜ダウンロード購入｜INVERSUS Deluxe INVERSUS Deluxe を購入 - Microsoft Store ja-JP  イベントに参加するまで INVERSUS関連のイベントは以前Gongonさんに誘われたりしていたのですが、東京は自分の居住地から遠く離れていることもあって中々厳しいなという状況でした。しかし、そんなある日INVERSUS開発者のアカウントがこんなツイートをしました。 Trip to Japan in October? Yes! I’ll have more details on what day we will have an INVERSUS community event soon (in Tokyo)! 🇯🇵
+&amp;mdash; INVERSUS (@InversusGame) July 15, 2018  なんとINVERSUS開発者が来日してイベントに参加するとのこと。これは行くしかないと思いました。 そして、しばらくしてINVERSUS JPからもイベントの正式な発表があり参加する運びとなりました。
+イベント当日 イベント当日なんとか中野駅までたどり着き、駅からGoo◯leマップの案内に従って会場を目指したら、会場の建物の裏側に案内されたようですがしばらく気づかず迷ってました。 ナビが表からではなく裏側をナビしてたから場所がわからんかったぞ
+&amp;mdash; カルゴウ (@karugou) October 13, 2018  同じ目に遭った方もいたようです。アプリに頼りきってはいけない&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>CTF4b 2018 writeup</title>
+      <link>https://hikotq.github.io/post/2018-05-27-ctf4b-writeup/</link>
+      <pubDate>Sun, 27 May 2018 16:22:41 +0900</pubDate>
+      
+      <guid>https://hikotq.github.io/post/2018-05-27-ctf4b-writeup/</guid>
+      <description>約1ヶ月前に新しく研究室に加わった後輩達の勧めでCTFを始めました。 その後彼らの管理しているCTFサイトの問題を解いたりしていたのですが、今回初心者向けのCTFとしてSECCON Beginners CTFが開かれるとのことで後輩達とチームを組んで出場する運びとなりました。
+いわく、「解いた問題のwriteupを公開するまでがCTF」らしいのでここにwriteupを記します。
+[Warmup] plain mail 与えられたパケットを調べるとパスワード付きのzipファイルとパスワードが見つかるのでzipファイルを解凍するとフラグが得られる。
+ctf4b{email_with_encrypted_file}
+RSA is Power 与えられた$N$を素因数分解して、$N=p\times q$ となるような $p, q$ を求めます。
+p = 299681192390656691733849646142066664329 q = 324144336644773773047359441106332937713 あとは $de \equiv 1\bmod (p-1)(q-1)$ を満す $d$ を拡張ユークリッド互除法を用いて求めてやれば、 Wikipedaに載っているとおりに $C^{d} \bmod N$ とすれば 復号できます。
+d = 88509020092584531671107468782943602124921999287671161687233461555074737950465 C^d mod N = 0x63746634627b35696d706c655f7273345f31735f336173795f6630725f757d 得られるフラグは16進数表記なので適当に文字列に変換します。
+ctf4b{5imple_rs4_1s_3asy_f0r_u}
+Streaming フラグの先頭がctf4bであることが分かっているのでそれを使って初期seedを求め、そこから次々にseedを求めながら複合していけばフラグを得られます。
+こんな感じのコードを書きました。
+def next(seed): A = 37423 B = 61781 C = 34607 return (A*seed+B)%C f = open(&#39;encrypted&#39;, &#39;rb&#39;) encrypted = f.</description>
+    </item>
+    
+    <item>
+      <title>Archives</title>
+      <link>https://hikotq.github.io/archives/</link>
+      <pubDate>Wed, 14 Mar 2018 20:48:23 +0900</pubDate>
+      
+      <guid>https://hikotq.github.io/archives/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Open on しばイヌとお茶</title>
+    <link>https://hikotq.github.io/tags/open/</link>
+    <description>Recent content in Open on しばイヌとお茶</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Mar 2018 21:55:13 +0900</lastBuildDate>
+    
+	<atom:link href="https://hikotq.github.io/tags/open/atom.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ブログ開設</title>
+      <link>https://hikotq.github.io/post/2018-03-14-first/</link>
+      <pubDate>Wed, 14 Mar 2018 21:55:13 +0900</pubDate>
+      
+      <guid>https://hikotq.github.io/post/2018-03-14-first/</guid>
+      <description>ブログを開設しました。どんなことを書いていくかはまだ決めてません。</description>
+    </item>
+    
+  </channel>
+</rss>

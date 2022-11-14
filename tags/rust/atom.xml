@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rust on しばイヌとお茶</title>
+    <link>https://hikotq.github.io/tags/rust/</link>
+    <description>Recent content in Rust on しばイヌとお茶</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 26 Mar 2019 21:00:13 +0900</lastBuildDate>
+    
+	<atom:link href="https://hikotq.github.io/tags/rust/atom.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>regexクレートを歩く(固定文字検索編)</title>
+      <link>https://hikotq.github.io/post/2019-03-26-rust-regex2/</link>
+      <pubDate>Tue, 26 Mar 2019 21:00:13 +0900</pubDate>
+      
+      <guid>https://hikotq.github.io/post/2019-03-26-rust-regex2/</guid>
+      <description>前回の記事はこちら
+固定文字列検索による最適化 固定文字列とはただの文字列のことです。例えば、「Cat」や「Dog」などは固定文字列です。 正規表現であれば　例えば (Apple|Banana)* というような正規表現によって「Apple」 や 「AppleBanana」など複数の文字列を表すことができますが、固定文字列は単一の文字列のみを表します。 一般に正規表現マッチングよりも固定文字列検索のほうが効率よく行うことができます。 そこで、現代の正規表現エンジンではマッチングの高速化を図るために固定文字列検索手法が取り入れられているものもあります。 具体的には入力として与えられた正規表現の先頭や末尾から固定文字列を括りだし、正規表現マッチングを行う開始位置を、括りだした固定文字列を検索することによって見つけ出します。
+例えば http://([^/?#]*)?([?#]*)(\?([^#]*))?(#(.*))?というような正規表現を使ってマッチングを行う場合にはhttp://の部分を固定文字列として括りだし、固定文字列検索手法を用いてマッチング対象中からhttp://の位置を見つけ出し、その位置から正規表現マッチングを行ないます。
+regexクレートにおける固定文字列検索 さて本題ですが、Rustの正規表現ライブラリであるregexでも固定文字列検索手法が取り入れられてます。 今回はregexクレート内で使用されている固定文字列検索手法についてまとめていこうと思います。 ただ、今回はそれぞれの手法がどのようなときに使われるかを中心に見ていくので、各手法の実装の詳細については立ち入りません。
+固定文字列検索についてのコードはregexクレートのsrc/literals内に配置されてあります。 使用される固定文字列マッチャは以下のようになっています。 #[derive(Clone, Debug)] enum Matcher { /// No literals. (Never advances through the input.)  Empty, /// A set of four or more single byte literals.  Bytes(SingleByteSet), /// A single substring, find using memchr and frequency analysis.  FreqyPacked(FreqyPacked), /// A single substring, find using Boyer-Moore.  BoyerMoore(BoyerMooreSearch), /// An Aho-Corasick automaton.</description>
+    </item>
+    
+    <item>
+      <title>regexクレートを歩く</title>
+      <link>https://hikotq.github.io/post/2019-01-03-rust-regex/</link>
+      <pubDate>Thu, 03 Jan 2019 20:10:14 +0900</pubDate>
+      
+      <guid>https://hikotq.github.io/post/2019-01-03-rust-regex/</guid>
+      <description>概要 regexクレートはRustで書かれた正規表現ライブラリで高速なgrepとして有名なripgrepなどでも使用されている。 今回はregexクレートを使用してRegex構造体を作成したときに内部ではどのようなことが行われているのかを見ていったのだが、色々こんがらがって来たので ここにメモを残すこととした。詳細にはあまり立ち入れていないがそれは今後の課題としたい。
+以下はRust1.31で正規表現を使用する場合のサンプルコード。なおregexクレートのバージョンはv1.1.0である。 use regex::Regex; fn main() { let re = Regex::new(&amp;#34;HappyNewYear!*&amp;#34;).unwrap(); }  このコードをエントリポイントとして、ソースコードを読んでいく。
+Regexのbuild サンプルコードで生成しているRegex構造体はregexクレートのsrc/re_unicode.rs内にて以下のように定義されている。 #[derive(Clone)] pub struct Regex(pub Exec); /// Core regular expression methods. impl Regex { /// Compiles a regular expression. Once compiled, it can be used repeatedly  /// to search, split or replace text in a string.  ///  /// If an invalid expression is given, then an error is returned.  pub fn new(re: &amp;amp;str) -&amp;gt; Result&amp;lt;Regex, Error&amp;gt; { RegexBuilder::new(re).</description>
+    </item>
+    
+  </channel>
+</rss>
